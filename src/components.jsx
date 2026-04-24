@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -13,7 +13,7 @@ function Navbar({ active }) {
       <div className="container">
         <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80px' }}>
           <a href="/" style={{ textDecoration: 'none' }}>
-            <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Logo" style={{ height: '40px' }} />
+            <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Geneva Laundromat" style={{ height: '40px' }} />
           </a>
           <ul style={{ display: 'flex', listStyle: 'none', gap: '2rem', margin: 0, alignItems: 'center' }}>
             {navLinks.map(l => (
@@ -38,42 +38,59 @@ function PageFooter() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col" style={{ paddingRight: '2rem' }}>
-            <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Logo" style={{ height: '36px', marginBottom: '1.5rem', filter: 'brightness(0) invert(1)' }} />
-            <p style={{ color: '#94A3B8', fontSize: '0.875rem' }}>Premium laundry and dry cleaning services designed to make your life easier.</p>
-          </div>
-          <div className="footer-col">
-            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka' }}>Company</h4>
-            <ul className="footer-links">
-              {['Home', 'About', 'Pickup Service', 'Contact'].map(l => (
-                <li key={l}><a href="#" style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l}</a></li>
+            <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Geneva" style={{ height: '36px', marginBottom: '1.5rem', filter: 'brightness(0) invert(1)' }} />
+            <p style={{ color: '#94A3B8', fontSize: '0.875rem', lineHeight: 1.7 }}>Geneva's modern self-service laundromat &amp; free laundry pickup service. Located at Rue des Pâquis 43, 1201 Genève.</p>
+            <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem' }}>
+              {['📘', '📸', '🐦'].map((icon, i) => (
+                <a key={i} href="#" style={{ width: '36px', height: '36px', background: 'rgba(255,255,255,0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem', textDecoration: 'none' }}>{icon}</a>
               ))}
-            </ul>
+            </div>
           </div>
           <div className="footer-col">
-            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka' }}>Further Links</h4>
+            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka', fontSize: '1.1rem' }}>Services</h4>
             <ul className="footer-links">
-              {['Privacy Policy', 'Terms & Conditions', 'FAQ', 'Recruitment'].map(l => (
-                <li key={l}><a href="#" style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l}</a></li>
-              ))}
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka' }}>Get In Touch</h4>
-            <ul style={{ listStyle: 'none' }}>
               {[
-                { icon: '📍', text: '123 Clean Street, NY 10001' },
-                { icon: '📞', text: '+1 (555) 123-4567' },
-                { icon: '✉️', text: 'hello@lavorama.com' },
+                { label: 'Self-Service Laundry', href: '/' },
+                { label: 'Pickup & Delivery Geneva', href: '/pickup' },
+                { label: 'Pricing', href: '/#pricing' },
+                { label: 'About Lavorama Geneva', href: '/about' },
+              ].map(l => (
+                <li key={l.label}><a href={l.href} style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l.label}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka', fontSize: '1.1rem' }}>Information</h4>
+            <ul className="footer-links">
+              {['Terms & Conditions', 'Privacy Policy', 'Contact', 'FAQ'].map(l => (
+                <li key={l}><a href="#" style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l}</a></li>
+              ))}
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka', fontSize: '1.1rem' }}>Contact — NAP</h4>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
+              {[
+                { icon: '📍', text: 'Rue des Pâquis 43\n1201 Genève, Switzerland' },
+                { icon: '📞', text: '+41 79 565 41 42' },
+                { icon: '✉️', text: 'booking@lavorama.ch' },
+                { icon: '🕐', text: 'Mon–Sun: 7:00 – 23:00' },
               ].map(item => (
-                <li key={item.icon} style={{ color: '#94A3B8', fontSize: '0.875rem', marginBottom: '1rem', display: 'flex', gap: '0.5rem' }}>
-                  <span style={{ color: 'var(--primary)' }}>{item.icon}</span> {item.text}
+                <li key={item.icon} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>
+                  <span style={{ color: 'var(--primary)', flexShrink: 0 }}>{item.icon}</span>
+                  <span style={{ color: '#94A3B8', fontSize: '0.875rem', whiteSpace: 'pre-line', lineHeight: 1.5 }}>{item.text}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '3rem', paddingTop: '2rem', textAlign: 'center' }}>
-          <p style={{ color: '#64748B', fontSize: '0.875rem', margin: 0 }}>Copyright © 2026 Lavorama. All rights reserved.</p>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', marginTop: '3rem', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
+          <p style={{ color: '#64748B', fontSize: '0.875rem', margin: 0 }}>© 2025 Lavorama · Rue des Pâquis 43, 1201 Genève. All rights reserved.</p>
+          <div style={{ display: 'flex', gap: '1.5rem' }}>
+            {['Terms & Conditions', 'Privacy Policy'].map(l => (
+              <a key={l} href="#" style={{ color: '#64748B', fontSize: '0.875rem', textDecoration: 'none' }}>{l}</a>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

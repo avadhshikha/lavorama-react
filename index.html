@@ -3,8 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lavorama | We Do Laundry For You</title>
-    <meta name="description" content="Premium laundry and dry cleaning services.">
+
+    <!-- PRIMARY SEO -->
+    <title>Lavorama | Self-Service Laundromat & Laundry Pickup Geneva | Rue des Pâquis</title>
+    <meta name="description" content="Lavorama is Geneva's modern laundromat at Rue des Pâquis 43. Self-service washers from CHF 6, free laundry pickup & delivery across Geneva. Open 7 days, 7AM–11PM." />
+    <meta name="keywords" content="laundromat Geneva, laverie automatique Genève, laundry pickup delivery Geneva, self-service laundry Geneva, washing machine Geneva, laundry service Pâquis Geneva" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Lavorama" />
+    <link rel="canonical" href="https://lavorama-react.vercel.app/" />
+
+    <!-- OPEN GRAPH (Social sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lavorama-react.vercel.app/" />
+    <meta property="og:title" content="Lavorama Geneva — Self-Service Laundromat & Laundry Pickup | Pâquis" />
+    <meta property="og:description" content="Geneva's modern laundromat at Rue des Pâquis 43. Washers from CHF 6, free pickup & delivery. Open 7 days a week." />
+    <meta property="og:locale" content="fr_CH" />
+    <meta property="og:site_name" content="Lavorama Geneva" />
+
+    <!-- LOCAL BUSINESS SCHEMA MARKUP -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LaundryService",
+      "name": "Lavorama",
+      "image": "https://lavorama-react.vercel.app/reset/imgi_67_lavorama-log-1-300x87.jpg",
+      "url": "https://lavorama-react.vercel.app",
+      "telephone": "+41795654142",
+      "email": "info@lavorama.ch",
+      "priceRange": "CHF 6 – CHF 16",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue des Pâquis 43",
+        "addressLocality": "Genève",
+        "postalCode": "1201",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.2127,
+        "longitude": 6.1476
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "07:00",
+          "closes": "23:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Geneva"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Lara Schmid"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "I can't recommend Lavorama enough. The service is incredibly convenient and the quality of every wash is outstanding."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Sofia Zimmermann"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "As a busy professional in Geneva, I have almost no time for laundry. Lavorama's machines are fast, the service is exceptional."
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "Anna Müller"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "The free pickup and delivery across Geneva has completely simplified my life. Affordable, always on time."
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a laundromat cost in Geneva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At Lavorama, prices start from CHF 6 for a 7 kg wash, CHF 12 for 15 kg, and CHF 16 for 20 kg. Detergent is always included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a laundromat open on Sunday in Geneva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Lavorama at Rue des Pâquis 43 is open every day including Sunday, from 7 AM to 11 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the nearest laundromat in Geneva?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lavorama is centrally located at Rue des Pâquis 43, 1201 Genève — easily accessible from Pâquis, Eaux-Vives, Cornavin, and the city centre."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
