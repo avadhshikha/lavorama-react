@@ -3,7 +3,9 @@ import React from 'react';
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
-  { label: 'Pickup Service', href: '/pickup' },
+  { label: 'Self-Service', href: '/self-service-laundromat-geneva' },
+  { label: 'Pickup', href: '/pickup' },
+  { label: 'Pricing', href: '/laundry-prices-geneva' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -50,9 +52,9 @@ function PageFooter() {
             <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka', fontSize: '1.1rem' }}>Services</h4>
             <ul className="footer-links">
               {[
-                { label: 'Self-Service Laundry', href: '/' },
+                { label: 'Self-Service Laundromat', href: '/self-service-laundromat-geneva' },
                 { label: 'Pickup & Delivery Geneva', href: '/pickup' },
-                { label: 'Pricing', href: '/#pricing' },
+                { label: 'Pricing Geneva', href: '/laundry-prices-geneva' },
                 { label: 'About Lavorama Geneva', href: '/about' },
               ].map(l => (
                 <li key={l.label}><a href={l.href} style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l.label}</a></li>
