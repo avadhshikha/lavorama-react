@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import About from './About.jsx';
 import Pickup from './Pickup.jsx';
 import Contact from './Contact.jsx';
+import SelfService from './SelfService.jsx';
+import Pricing from './Pricing.jsx';
 import { Navbar, PageFooter } from './components.jsx';
 
 const pricingPlans = [
@@ -30,6 +32,8 @@ function App() {
   if (currentPage === '/about') return <About />;
   if (currentPage === '/pickup') return <Pickup />;
   if (currentPage === '/contact') return <Contact />;
+  if (currentPage === '/self-service-laundromat-geneva') return <SelfService />;
+  if (currentPage === '/laundry-prices-geneva') return <Pricing />;
 
   return (
     <>
