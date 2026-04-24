@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import About from './About.jsx';
 
 function App() {
   const [faqOpen, setFaqOpen] = useState(0);
+  const currentPage = window.location.pathname;
+
+  // Simple client-side routing
+  if (currentPage === '/about') {
+    return <About />;
+  }
 
   return (
     <>
@@ -13,7 +20,7 @@ function App() {
             </a>
             <ul className="nav-links" style={{ display: 'flex', listStyle: 'none', gap: '2rem' }}>
               <li><a href="/" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Home</a></li>
-              <li><a href="#" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>About</a></li>
+              <li><a href="/about" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>About</a></li>
               <li><a href="#" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>Services</a></li>
               <li><a href="#" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>Contact</a></li>
             </ul>
@@ -86,7 +93,6 @@ function App() {
           <img src="/reset/imgi_16_10.png" className="float-elem" style={{ top: '40%', left: '-10%', width: '150px' }} alt="Yellow Glove Thumbs Up" />
           <img src="/reset/imgi_21_11.png" className="float-elem" style={{ top: '0%', right: '-10%', width: '150px', transform: 'rotate(-20deg)' }} alt="Yellow Glove Pointing" />
           <img src="/reset/imgi_42_ele10-284x300.png" className="float-elem" style={{ bottom: 0, right: '10%', width: '150px', opacity: 0.3 }} alt="Dots" />
-          
           <h2 style={{ fontSize: '3rem', marginBottom: '1rem', color: 'white' }}>Laundry Solutions For<br />A Busy Life</h2>
           <p style={{ color: 'white', maxWidth: '600px', margin: '0 auto 2.5rem', fontWeight: 400 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <a href="#" className="btn btn-white">Contact Us</a>
@@ -154,8 +160,8 @@ function App() {
                 "How To Keep My Color Clothes From Fading?"
               ].map((q, idx) => (
                 <div key={idx} style={faqOpen === idx ? { background: 'white', borderRadius: '20px', boxShadow: 'var(--shadow)', marginBottom: '1rem' } : {}}>
-                  <div 
-                    className={`faq-item ${faqOpen === idx ? 'active' : ''}`} 
+                  <div
+                    className={`faq-item ${faqOpen === idx ? 'active' : ''}`}
                     style={faqOpen === idx ? { background: 'var(--secondary)' } : {}}
                     onClick={() => setFaqOpen(faqOpen === idx ? -1 : idx)}
                   >
@@ -214,8 +220,8 @@ function App() {
             <div className="footer-col">
               <h4>Company</h4>
               <ul className="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
