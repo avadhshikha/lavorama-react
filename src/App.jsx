@@ -1,32 +1,20 @@
 import React, { useState } from 'react';
 import About from './About.jsx';
+import Pickup from './Pickup.jsx';
+import Contact from './Contact.jsx';
+import { Navbar, PageFooter } from './components.jsx';
 
 function App() {
   const [faqOpen, setFaqOpen] = useState(0);
   const currentPage = window.location.pathname;
 
-  // Simple client-side routing
-  if (currentPage === '/about') {
-    return <About />;
-  }
+  if (currentPage === '/about') return <About />;
+  if (currentPage === '/pickup') return <Pickup />;
+  if (currentPage === '/contact') return <Contact />;
 
   return (
     <>
-      <header>
-        <div className="container">
-          <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <a href="/" className="logo">
-              <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Logo" style={{ height: '40px' }} />
-            </a>
-            <ul className="nav-links" style={{ display: 'flex', listStyle: 'none', gap: '2rem' }}>
-              <li><a href="/" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Home</a></li>
-              <li><a href="/about" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>About</a></li>
-              <li><a href="#" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>Services</a></li>
-              <li><a href="#" style={{ color: 'var(--text-main)', textDecoration: 'none' }}>Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Navbar active="Home" />
 
       {/* 1. Hero Section */}
       <section className="hero">
@@ -36,8 +24,8 @@ function App() {
             <h1>WE DO<br />LAUNDRY<br />FOR YOU</h1>
             <p>We are dedicated to providing the best<br />dry cleaning experience.</p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-              <a href="#" className="btn btn-orange">Our Services</a>
-              <a href="#" className="btn btn-teal">Contact Us</a>
+              <a href="/pickup" className="btn btn-orange">Our Services</a>
+              <a href="/contact" className="btn btn-teal">Contact Us</a>
             </div>
           </div>
           <div className="image-wrapper hero-img">
@@ -52,17 +40,17 @@ function App() {
           <h2>Our Services</h2>
           <div className="services-grid">
             {[
-              { img: "imgi_3_23-laundry-car_512.png", title: "Laundry Pickup" },
-              { img: "imgi_12_25-washing-powder_512.png", title: "Wash And Fold" },
-              { img: "imgi_5_30-basket-weight-scale_512.png", title: "Bath Cleaning" },
-              { img: "imgi_6_21-dry-cleaning_512.png", title: "Dry Cleaning" }
+              { img: "imgi_3_23-laundry-car_512.png", title: "Laundry Pickup", href: "/pickup" },
+              { img: "imgi_12_25-washing-powder_512.png", title: "Wash And Fold", href: "/pickup" },
+              { img: "imgi_5_30-basket-weight-scale_512.png", title: "Bath Cleaning", href: "/pickup" },
+              { img: "imgi_6_21-dry-cleaning_512.png", title: "Dry Cleaning", href: "/pickup" }
             ].map((service, idx) => (
               <div className="service-card" key={idx}>
                 <div className="service-card-inner">
                   <img src={`/reset/${service.img}`} alt={service.title} />
                   <h3>{service.title}</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                  <a href="#" className="read-more" style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Read More &gt;&gt;</a>
+                  <a href={service.href} className="read-more" style={{ marginTop: '1rem', fontSize: '0.9rem' }}>Read More &gt;&gt;</a>
                 </div>
               </div>
             ))}
@@ -81,7 +69,7 @@ function App() {
             <h2 style={{ textAlign: 'left', fontSize: '3rem', lineHeight: 1.1 }}>Getting Tired With<br />Your Laundry?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="#" className="btn btn-orange" style={{ marginTop: '1.5rem' }}>Read More</a>
+            <a href="/pickup" className="btn btn-orange" style={{ marginTop: '1.5rem' }}>Book Pickup</a>
           </div>
         </div>
       </section>
@@ -95,7 +83,7 @@ function App() {
           <img src="/reset/imgi_42_ele10-284x300.png" className="float-elem" style={{ bottom: 0, right: '10%', width: '150px', opacity: 0.3 }} alt="Dots" />
           <h2 style={{ fontSize: '3rem', marginBottom: '1rem', color: 'white' }}>Laundry Solutions For<br />A Busy Life</h2>
           <p style={{ color: 'white', maxWidth: '600px', margin: '0 auto 2.5rem', fontWeight: 400 }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <a href="#" className="btn btn-white">Contact Us</a>
+          <a href="/contact" className="btn btn-white">Contact Us</a>
         </div>
       </section>
 
@@ -170,7 +158,7 @@ function App() {
                   </div>
                   {faqOpen === idx && (
                     <div style={{ padding: '1rem 2rem', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 500 }}>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                   )}
                 </div>
@@ -180,7 +168,7 @@ function App() {
         </div>
       </section>
 
-      {/* 8. Washing Machines Slider */}
+      {/* 8. Washing Machines */}
       <section className="section">
         <div className="container">
           <div className="machines-grid">
@@ -191,7 +179,7 @@ function App() {
         </div>
       </section>
 
-      {/* 9. Newsletter Section */}
+      {/* 9. Newsletter */}
       <section className="section bg-teal" style={{ padding: 0, overflow: 'visible' }}>
         <div className="container two-col-section" style={{ alignItems: 'center' }}>
           <div className="image-wrapper" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', position: 'relative' }}>
@@ -209,42 +197,7 @@ function App() {
         </div>
       </section>
 
-      {/* 10. Footer */}
-      <footer>
-        <div className="container">
-          <div className="footer-grid">
-            <div className="footer-col" style={{ paddingRight: '2rem' }}>
-              <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Logo" className="footer-logo" />
-              <p style={{ fontSize: '0.85rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div className="footer-col">
-              <h4>Company</h4>
-              <ul className="footer-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4>Further Links</h4>
-              <ul className="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">FAQ</a></li>
-              </ul>
-            </div>
-            <div className="footer-col">
-              <h4 style={{ color: 'transparent' }}>Contact Info</h4>
-              <ul className="footer-contact footer-links">
-                <li><span style={{ color: 'var(--primary)' }}>📍</span> <span style={{ fontSize: '0.9rem' }}>123 Clean Street, NY 10001</span></li>
-                <li><span style={{ color: 'var(--primary)' }}>📞</span> <span style={{ fontSize: '0.9rem' }}>+1 (555) 123-4567</span></li>
-                <li><span style={{ color: 'var(--primary)' }}>✉️</span> <span style={{ fontSize: '0.9rem' }}>hello@lavorama.com</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <PageFooter />
     </>
   );
 }
