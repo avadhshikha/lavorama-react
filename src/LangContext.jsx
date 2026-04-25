@@ -31,28 +31,35 @@ export function useLang() {
 /* ── Language Switcher Component ── */
 export function LangSwitcher() {
   const { lang, setLang } = useLang();
-  const next = lang === 'fr'
-    ? { code: 'en', label: 'EN', title: 'Switch to English' }
-    : { code: 'fr', label: 'FR', title: 'Passer en Français' };
 
   return (
-    <button
-      onClick={() => setLang(next.code)}
-      title={next.title}
-      style={{
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        padding: '6px 14px', borderRadius: '50px',
-        border: '1px solid #E2E8F0',
-        background: '#F1F5F9',
-        color: '#334155',
-        fontFamily: 'Fredoka', fontSize: '0.88rem', fontWeight: 600,
-        cursor: 'pointer', transition: 'all 0.22s ease',
-        minWidth: '48px'
-      }}
-      onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = 'var(--primary)'; }}
-      onMouseLeave={e => { e.currentTarget.style.background = '#F1F5F9'; e.currentTarget.style.color = '#334155'; e.currentTarget.style.borderColor = '#E2E8F0'; }}
-    >
-      {next.label}
-    </button>
+    <div style={{
+      display: 'flex', alignItems: 'center', gap: '2px',
+      background: '#F1F5F9', borderRadius: '50px',
+      padding: '4px', border: '1px solid #E2E8F0',
+    }}>
+      {[
+        { code: 'fr', label: 'FR' },
+        { code: 'en', label: 'EN' },
+      ].map(({ code, label }) => (
+        <button
+          key={code}
+          onClick={() => setLang(code)}
+          title={code === 'fr' ? 'Passer en Français' : 'Switch to English'}
+          style={{
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            padding: '4px 12px', borderRadius: '50px', border: 'none',
+            background: lang === code ? 'var(--primary)' : 'transparent',
+            color: lang === code ? 'white' : '#64748B',
+            fontFamily: 'Fredoka', fontSize: '0.85rem', fontWeight: 700,
+            cursor: 'pointer', transition: 'all 0.22s ease',
+            boxShadow: lang === code ? '0 2px 8px rgba(108,191,191,0.35)' : 'none',
+            minWidth: '40px'
+          }}
+        >
+          {label}
+        </button>
+      ))}
+    </div>
   );
 }
