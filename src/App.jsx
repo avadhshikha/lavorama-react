@@ -169,16 +169,7 @@ function App() {
         </div>
       </section>
 
-      {/* ── 6. MACHINES ── */}
-      <section className="section" style={{ background: 'white' }}>
-        <div className="container">
-          <div className="machines-grid">
-            <img src="/reset/model/lavorama-geneva-pointing-washer-self-service-lifestyle.png" alt="Lavorama Geneva washing machine" />
-            <img src="/reset/model/lavorama-geneva-booking-desk-notes-lifestyle.png" alt="Lavorama Geneva industrial washer" />
-            <img src="/reset/model/lavorama-geneva-surprised-laundry-basket-studio-portrait.png" alt="Lavorama Geneva laundromat machine" />
-          </div>
-        </div>
-      </section>
+
 
       {/* ── 7. CONTACT CTA ── */}
       <section className="section bg-light">
