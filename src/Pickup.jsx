@@ -193,7 +193,7 @@ function Pickup() {
             </div>
             <div style={{ flex: 1, minWidth: '280px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-10px', width: '250px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/model/lavorama-geneva-doorstep-pickup-bag-transparent-cutout.png" alt="Laundry pickup service Geneva" style={{ maxWidth: '80%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-doorstep-pickup-bag-lifestyle.jpeg" alt="Laundry pickup service Geneva" style={{ maxWidth: '80%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
           </div>
         </div>
