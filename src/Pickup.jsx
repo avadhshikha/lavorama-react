@@ -114,7 +114,7 @@ function Pickup() {
               </div>
             </div>
             <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
-              <img src="/reset/model/lavorama-geneva-scooter-delivery-transparent-cutout.png" alt="Free laundry pickup delivery Geneva" style={{ maxWidth: '90%' }} />
+              <img src="/reset/girl with scooter cutout.png" alt="Free laundry pickup delivery Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>

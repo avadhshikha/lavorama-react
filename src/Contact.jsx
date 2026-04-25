@@ -108,7 +108,7 @@ function Contact() {
             </div>
             <div style={{ flex: 0.7, minWidth: '240px', position: 'relative' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-20px', width: '250px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/model/lavorama-geneva-phone-support-transparent-cutout.png" alt="Contact Lavorama Geneva" style={{ maxWidth: '90%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-phone-support-transparent-cutout.png" alt="Contact Lavorama Geneva" style={{ maxWidth: '90%', position: 'relative', zIndex: 1 }} />
             </div>
           </div>
         </div>

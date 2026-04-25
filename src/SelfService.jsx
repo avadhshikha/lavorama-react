@@ -51,7 +51,7 @@ function SelfService() {
               </div>
             </div>
             <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
-              <img src="/reset/imgi_66_LAVORAMA-CUTE-MODEL-3-1.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '90%' }} />
+              <img src="/reset/girl with bucket showing up 1 finger cutout.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>
