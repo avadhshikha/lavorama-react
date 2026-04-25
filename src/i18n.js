@@ -35,8 +35,8 @@ export const translations = {
     home: {
       heroBadge: '📍 Rue des Pâquis 43, Genève — Ouvert 7j/7',
       heroTitle: 'La Meilleure\nLaverie Libre-Service\nde Genève',
-      heroP1: "Lavorama se trouve rue des Pâquis, à Genève — avec des machines industrielles jusqu'à 20 kg et un service de ramassage & livraison gratuit partout à Genève, 7j/7.",
-      heroP2: "Que vous habitiez Pâquis, Eaux-Vives, Plainpalais ou ailleurs à Genève, Lavorama rend la lessive simple. Sans pièces, sans stress — juste du linge propre.",
+      heroP1: "Laverie moderne à Genève avec machines jusqu'à 20 kg et ramassage & livraison gratuit.",
+      heroP2: "Sans pièces, sans stress — juste du linge propre, ouvert 7j/7.",
       heroCta1: 'Voir les tarifs',
       heroCta2: 'Réserver un ramassage',
 
@@ -164,8 +164,8 @@ export const translations = {
     home: {
       heroBadge: '📍 Rue des Pâquis 43, Geneva — Open 7 days',
       heroTitle: "Geneva's Best\nSelf-Service\nLaundromat",
-      heroP1: "Lavorama is located at Rue des Pâquis, Geneva — offering industrial washers up to 20 kg and a free laundry pickup & delivery service across Geneva, 7 days a week.",
-      heroP2: "Whether you live in Pâquis, Eaux-Vives, Plainpalais, or anywhere across Geneva, Lavorama makes laundry effortless. No coins, no stress — just clean clothes.",
+      heroP1: "Modern laundromat in Geneva with industrial washers up to 20 kg and free pickup & delivery.",
+      heroP2: "No coins, no stress — just clean clothes, open 7 days a week.",
       heroCta1: 'See Pricing',
       heroCta2: 'Book Pickup',
       servicesLabel: 'Laundry Services in Geneva',
