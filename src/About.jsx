@@ -81,20 +81,20 @@ function About() {
       {/* 2. Your Laundry, Our Priority */}
       <section className="section" style={{ background: 'white' }}>
         <div className="container two-col-section">
+          <div className="image-wrapper" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-10%', left: '-5%', width: '320px', opacity: 0.4, zIndex: 0 }} />
+            <img
+              src="/reset/lavorama-geneva-detergent-lift-laundry-room-lifestyle.jpeg"
+              alt="Lavorama laundry folded"
+              style={{ position: 'relative', zIndex: 1, maxWidth: '90%', borderRadius: '12px' }}
+            />
+          </div>
           <div className="text-wrapper">
             <h2 style={{ textAlign: 'left', fontSize: 'clamp(1.8rem, 5vw, 2.8rem)', lineHeight: 1.15, marginBottom: '1.5rem' }}>
               {c.priorityTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}<br/></React.Fragment>)}
             </h2>
             <p>{c.priorityP1}</p>
             <p>{c.priorityP2}</p>
-          </div>
-          <div className="image-wrapper" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-10%', right: '-5%', width: '320px', opacity: 0.4, zIndex: 0 }} />
-            <img
-              src="/reset/lavorama-geneva-detergent-lift-laundry-room-lifestyle.jpeg"
-              alt="Lavorama laundry folded"
-              style={{ position: 'relative', zIndex: 1, maxWidth: '90%', borderRadius: '12px' }}
-            />
           </div>
         </div>
       </section>
