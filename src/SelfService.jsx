@@ -52,9 +52,9 @@ function SelfService() {
             </div>
             <div className="hero-img" style={{ minWidth: '300px' }}>
               <img
-                src="/reset/lavorama-geneva-pointing-washer-self-service-lifestyle.jpeg"
+                src="/reset/girl with bucket showing up 1 finger cutout.png"
                 alt="Self-service laundromat Geneva"
-                style={{ maxWidth: '100%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }}
+                style={{ maxWidth: '100%' }}
               />
             </div>
           </div>
@@ -119,7 +119,7 @@ function SelfService() {
           <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <div style={{ flex: '1 1 280px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', left: '-10px', width: '200px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/girl with folded items cutout.png" alt="Folded laundry Geneva" style={{ maxWidth: '85%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-pointing-washer-self-service-lifestyle.jpeg" alt="Wash laundry Geneva" style={{ maxWidth: '85%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
             <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>What Can You Wash at Lavorama Geneva?</h2>

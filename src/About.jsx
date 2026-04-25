@@ -72,7 +72,7 @@ function About() {
               </div>
             </div>
             <div className="hero-img">
-              <img src="/reset/lavorama-geneva-detergent-lift-laundry-room-lifestyle.jpeg" alt="Lavorama Geneva laundromat" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+              <img src="/reset/imgi_17_lavorama-cute-model-2-814x1024.png" alt="Lavorama Geneva laundromat" style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ function About() {
           <div className="image-wrapper" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-10%', right: '-5%', width: '320px', opacity: 0.4, zIndex: 0 }} />
             <img
-              src="/reset/girl with folded items cutout.png"
+              src="/reset/lavorama-geneva-detergent-lift-laundry-room-lifestyle.jpeg"
               alt="Lavorama laundry folded"
               style={{ position: 'relative', zIndex: 1, maxWidth: '90%', borderRadius: '12px' }}
             />
@@ -146,7 +146,7 @@ function About() {
           <div style={{ width: '50%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexShrink: 0 }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '10%', left: '0', width: '320px', opacity: 0.25, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
             <img
-              src="/reset/girl with bucket cutout.png"
+              src="/reset/imgi_8_lavorama-model-cute--814x1024.png"
               alt="Newsletter model"
               style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }}
             />

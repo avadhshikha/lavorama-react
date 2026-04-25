@@ -114,11 +114,7 @@ function Pickup() {
               </div>
             </div>
             <div className="hero-img">
-              <img
-                src="/reset/lavorama-geneva-doorstep-pickup-bag-lifestyle.jpeg"
-                alt="Free laundry pickup delivery Geneva"
-                style={{ maxWidth: '100%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }}
-              />
+              <img src="/reset/girl with scooter cutout.png" alt="Free laundry pickup delivery Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>
@@ -197,7 +193,7 @@ function Pickup() {
             </div>
             <div style={{ flex: '1 1 260px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-10px', width: '250px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/lavorama-geneva-pointing-delivery-van-transparent-cutout.png" alt="Laundry pickup service Geneva" style={{ maxWidth: '80%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-doorstep-pickup-bag-lifestyle.jpeg" alt="Laundry pickup service Geneva" style={{ maxWidth: '80%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
           </div>
         </div>

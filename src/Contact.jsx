@@ -30,7 +30,7 @@ function Contact() {
               </div>
             </div>
             <div className="hero-img">
-              <img src="/reset/lavorama-geneva-booking-desk-notes-lifestyle.jpeg" alt="Book laundry pickup Geneva" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+              <img src="/reset/lavorama-geneva-phone-support-transparent-cutout.png" alt="Contact Lavorama Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ function Contact() {
             </div>
             <div style={{ flex: '0 1 300px', minWidth: '240px', position: 'relative' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-20px', width: '250px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/lavorama-geneva-phone-support-transparent-cutout.png" alt="Contact Lavorama Geneva" style={{ maxWidth: '90%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-booking-desk-notes-lifestyle.jpeg" alt="Book laundry pickup Geneva" style={{ maxWidth: '90%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
           </div>
         </div>
