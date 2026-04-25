@@ -88,7 +88,7 @@ function PageFooter() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col" style={{ paddingRight: '1rem' }}>
-            <img src="/reset/imgi_67_lavorama-log-1-300x87.jpg" alt="Lavorama Geneva" style={{ height: '36px', marginBottom: '1.5rem', filter: 'brightness(0) invert(1)' }} />
+            <img src="/reset/Lavorama white.png" alt="Lavorama Geneva" style={{ height: '36px', marginBottom: '1.5rem' }} />
             <p style={{ color: '#94A3B8', fontSize: '0.875rem', lineHeight: 1.7 }}>{f.tagline}</p>
             <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.25rem' }}>
               {['📘', '📸', '🐦'].map((icon, i) => (
