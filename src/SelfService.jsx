@@ -33,18 +33,26 @@ function SelfService() {
       <Navbar active="Home" />
 
       {/* ── 1. HERO ── */}
-      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
         <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '18%', width: '200px', opacity: 0.35 }} />
-        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', bottom: '-10px', left: '12%', width: '160px', opacity: 0.25, transform: 'rotate(180deg)' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <p style={{ textAlign: 'center', color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Self-service laundromat Geneva</p>
-          <h1 style={{ fontFamily: 'Fredoka', fontSize: '3.2rem', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, textAlign: 'center', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
-            Self-Service Laundromat in Geneva — Open Every Day, 7 AM to 11 PM
-          </h1>
-          <p style={{ textAlign: 'center', maxWidth: '680px', margin: '0 auto 2rem', fontSize: '1.05rem' }}>Lavorama is Geneva's most modern self-service laundromat, located at Rue des Pâquis 43. Industrial washers from 7–20 kg, detergent always included, no coins needed. Open every day of the year.</p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" className="btn btn-orange">Book a Machine Online</a>
-            <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp Us</a>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '4rem', alignItems: 'flex-end' }}>
+            <div style={{ flex: 1, paddingBottom: '4rem' }}>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                Self-service laundromat Geneva
+              </div>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: '3.2rem', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>
+                Self-Service Laundromat in Geneva — Open Every Day, 7 AM to 11 PM
+              </h1>
+              <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>Lavorama is Geneva's most modern self-service laundromat, located at Rue des Pâquis 43. Industrial washers from 7–20 kg, detergent always included, no coins needed. Open every day of the year.</p>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="/contact" className="btn btn-orange">Book a Machine Online</a>
+                <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp Us</a>
+              </div>
+            </div>
+            <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+              <img src="/reset/imgi_66_LAVORAMA-CUTE-MODEL-3-1.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '90%' }} />
+            </div>
           </div>
         </div>
       </section>
