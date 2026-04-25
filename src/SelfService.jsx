@@ -52,7 +52,7 @@ function SelfService() {
             </div>
             <div className="hero-img" style={{ minWidth: '300px' }}>
               <img
-                src="/reset/girl with bucket showing up 1 finger cutout.png"
+                src="/reset/girl with folded items cutout.png"
                 alt="Self-service laundromat Geneva"
                 style={{ maxWidth: '100%' }}
               />

@@ -195,7 +195,7 @@ function App() {
         <div className="container newsletter-section-inner" style={{ display: 'flex', alignItems: 'flex-end', gap: '3rem' }}>
           <div style={{ width: '50%', position: 'relative', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', flexShrink: 0 }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '10%', left: 0, width: '300px', opacity: 0.2, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
-            <img src="/reset/girl with folded items cutout.png" alt="Lavorama laundry service Geneva" style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }} />
+            <img src="/reset/girl with bucket showing up 1 finger cutout.png" alt="Lavorama laundry service Geneva" style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }} />
           </div>
           <div style={{ flex: 1, padding: '4rem 0' }}>
             <h2 style={{ textAlign: 'left', fontSize: '2.5rem', color: 'white', marginBottom: '0.75rem' }}>
