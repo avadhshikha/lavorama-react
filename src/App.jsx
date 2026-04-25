@@ -102,19 +102,6 @@ function App() {
             ))}
           </div>
 
-          {/* FAQ */}
-          <div style={{ marginTop: '4rem', background: 'white', borderRadius: '20px', padding: '2.5rem', boxShadow: '0 4px 20px rgba(108,191,191,0.1)' }}>
-            <h3 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: '1.6rem', marginBottom: '2rem', textAlign: 'center' }}>{h.faqTitle}</h3>
-            {h.faqs.map((faq, i) => (
-              <div key={i} style={{ borderBottom: i < h.faqs.length - 1 ? '1px solid var(--border)' : 'none', paddingBottom: '1rem', marginBottom: '1rem' }}>
-                <div onClick={() => setFaqOpen(faqOpen === i ? null : i)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', gap: '1rem' }}>
-                  <span style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: '1.05rem' }}>{faq.q}</span>
-                  <span style={{ color: 'var(--secondary)', fontSize: '1.4rem', fontWeight: 700, flexShrink: 0 }}>{faqOpen === i ? '−' : '+'}</span>
-                </div>
-                {faqOpen === i && <p style={{ marginTop: '0.75rem', fontSize: '0.95rem', fontWeight: 600 }}>{faq.a}</p>}
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -135,13 +122,6 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="why-benefits-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1.5rem', marginTop: '1.5rem' }}>
-            {h.whyBenefits.map((f, i) => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '14px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.2)' }}>
-                <h4 style={{ color: 'white', fontFamily: 'Fredoka', fontSize: '1.1rem', marginBottom: '0.5rem' }}>✦ {f.title}</h4>
-                <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '0.85rem', fontWeight: 400, marginBottom: 0 }}>{f.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>

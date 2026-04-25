@@ -9,14 +9,13 @@ const faqs = [
   { q: 'How long does the laundry pickup service take in Geneva?', a: 'We aim to collect and return your laundry within the same day or next day. Your confirmation will include the estimated return time.' },
   { q: 'Can you handle delicate items and special garments?', a: 'Absolutely. Mention any special instructions when you book — silk, wool, sportswear, duvets — and we\'ll apply the appropriate care program.' },
   { q: 'Is there a minimum order for laundry pickup in Geneva?', a: 'No minimum order. Whether it\'s one bag or several, we\'re happy to help.' },
-  { q: 'How can I track my laundry order?', a: 'You can track your order status in real time on the Lavorama website after booking. You\'ll also receive updates by phone or WhatsApp.' },
 ];
 
 const reasons = [
   { icon: '🚚', title: 'Free Pickup & Delivery Across Geneva', desc: 'No delivery charges, no hidden fees. We come to your address anywhere in Geneva and bring your laundry back — completely free.' },
   { icon: '🌿', title: 'Eco-Certified Professional Detergents', desc: 'High-quality, biodegradable professional detergents — better results for your clothes, safer for your skin, kinder to the environment.' },
   { icon: '✨', title: 'Superior Stain Removal', desc: 'Our industrial machines with professional detergents remove tough stains that home washers leave behind. Your clothes come back genuinely clean.' },
-  { icon: '📍', title: 'Online Order Tracking', desc: 'Book online and track your laundry order in real time on our website. You\'ll always know exactly where your clothes are.' },
+  { icon: '📞', title: 'Responsive Customer Support', desc: 'Have a question or need to change your pickup time? We are available 7 days a week by phone, email, or WhatsApp to assist you.' },
   { icon: '👗', title: 'Special Treatment Available', desc: 'Delicates, sportswear, silk, wool, duvets — tell us what you have and we\'ll apply the right care. No item is too tricky.' },
   { icon: '⏱️', title: 'Saves You Significant Time', desc: 'The average person spends 2–3 hours per week on laundry. Our pickup service gives that time back to you — every single week.' },
   { icon: '💳', title: 'Affordable — Transparent Pricing', desc: 'Our pickup service is priced fairly and clearly. No surprise charges. You know what you\'re paying before we collect.' },
@@ -142,7 +141,7 @@ function Pickup() {
               { icon: '📱', step: 1, title: 'Book Online or on WhatsApp', desc: 'Visit lavorama.ch or message us at +41 79 565 41 42. Select your pickup date, time, and address anywhere in Geneva. Takes less than 60 seconds.' },
               { icon: '✅', step: 2, title: 'Instant Confirmation Sent to You', desc: 'As soon as you submit your booking, you\'ll receive a confirmation with your scheduled pickup details. No uncertainty — you\'ll know exactly when we\'re coming.' },
               { icon: '👜', step: 3, title: 'Pack and Leave at Your Door', desc: 'On the day, place your laundry in a bag and leave it at your door. You can include specific care instructions — we\'ll follow them carefully.' },
-              { icon: '🏠', step: 4, title: 'We Do Everything — You Track It Online', desc: 'Our team collects your bag, professionally washes, dries, and folds everything. Once ready, we deliver it back. Track your order the whole time.' },
+              { icon: '🏠', step: 4, title: 'We Do Everything', desc: 'Our team collects your bag, professionally washes, dries, and folds everything. Once ready, we deliver it back to your door.' },
             ].map((s, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
                 <div style={{ width: '75px', height: '75px', borderRadius: '50%', background: 'var(--primary-light)', border: '3px solid var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.8rem', margin: '0 auto 1.2rem', boxShadow: '0 5px 20px rgba(108,191,191,0.25)' }}>{s.icon}</div>
@@ -184,7 +183,7 @@ function Pickup() {
             <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>What You Get With Every Lavorama Geneva Pickup</h2>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', marginTop: '1.5rem' }}>
-                {['Superior stain removal guaranteed','Affordable, transparent pricing — no hidden fees','Online booking and real-time order tracking','Special treatment options for all garment types','Time saved — we handle everything for you','Maximum convenience — we come to your door','Longer-lasting clothes with professional care','Low-energy, eco-friendly washing machines'].map(b => (
+                {['Superior stain removal guaranteed','Affordable, transparent pricing — no hidden fees','Easy online booking and fast confirmation','Special treatment options for all garment types','Time saved — we handle everything for you','Maximum convenience — we come to your door','Longer-lasting clothes with professional care','Low-energy, eco-friendly washing machines'].map(b => (
                   <li key={b} style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', fontWeight: 600, fontSize: '0.95rem' }}>
                     <span style={{ color: 'var(--secondary)', fontSize: '1.2rem', flexShrink: 0 }}>✓</span>{b}
                   </li>
