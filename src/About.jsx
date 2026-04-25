@@ -91,8 +91,8 @@ function About() {
           <div className="image-wrapper" style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-10%', right: '-5%', width: '320px', opacity: 0.4, zIndex: 0 }} />
             <img
-              src="/reset/model/lavorama-geneva-surprised-laundry-basket-studio-portrait.png"
-              alt="Man with laundry"
+              src="/reset/model/lavorama-geneva-folded-linens-studio-portrait.png"
+              alt="Lavorama laundry folded"
               style={{ position: 'relative', zIndex: 1, maxWidth: '90%', borderRadius: '12px' }}
             />
           </div>
@@ -146,7 +146,7 @@ function About() {
           <div style={{ width: '50%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '10%', left: '0', width: '320px', opacity: 0.25, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
             <img
-              src="/reset/model/lavorama-geneva-folded-linens-studio-portrait.png"
+              src="/reset/imgi_24_lavorama-model-cute-.png"
               alt="Newsletter model"
               style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }}
             />
