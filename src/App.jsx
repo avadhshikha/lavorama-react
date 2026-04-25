@@ -173,9 +173,9 @@ function App() {
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
           <div className="machines-grid">
-            <img src="/reset/imgi_19_LAVORAMA-SLIDER1.png" alt="Lavorama Geneva washing machine" />
-            <img src="/reset/imgi_20_LAVORAMA-SLIDER2.png" alt="Lavorama Geneva industrial washer" />
-            <img src="/reset/imgi_18_LAVORAMA-SLIDER3.png" alt="Lavorama Geneva laundromat machine" />
+            <img src="/reset/model/lavorama-geneva-pointing-washer-self-service-lifestyle.png" alt="Lavorama Geneva washing machine" />
+            <img src="/reset/model/lavorama-geneva-booking-desk-notes-lifestyle.png" alt="Lavorama Geneva industrial washer" />
+            <img src="/reset/model/lavorama-geneva-surprised-laundry-basket-studio-portrait.png" alt="Lavorama Geneva laundromat machine" />
           </div>
         </div>
       </section>
@@ -207,7 +207,7 @@ function App() {
         <div className="container two-col-section" style={{ alignItems: 'flex-end' }}>
           <div style={{ width: '50%', position: 'relative', display: 'flex', alignItems: 'flex-end', justifyContent: 'center' }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '10%', left: 0, width: '300px', opacity: 0.2, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
-            <img src="/reset/imgi_24_lavorama-model-cute-.png" alt="Lavorama laundry service Geneva" style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }} />
+            <img src="/reset/model/lavorama-geneva-folded-linens-studio-portrait.png" alt="Lavorama laundry service Geneva" style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }} />
           </div>
           <div style={{ width: '50%', padding: '4rem 0' }}>
             <h2 style={{ textAlign: 'left', fontSize: '2.5rem', color: 'white', marginBottom: '0.75rem' }}>

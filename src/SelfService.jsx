@@ -107,7 +107,7 @@ function SelfService() {
           <div style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <div style={{ flex: 1, minWidth: '280px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', left: '-10px', width: '200px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/imgi_4_bearded-curious-cheerful-black-unshaven-man-carrie-2022-02-07-02-04-04-utc2.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '85%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
+              <img src="/reset/model/lavorama-geneva-detergent-lift-laundry-room-lifestyle.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '85%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
             <div style={{ flex: 1, minWidth: '280px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>What Can You Wash at Lavorama Geneva?</h2>
