@@ -114,7 +114,11 @@ function Pickup() {
               </div>
             </div>
             <div className="hero-img">
-              <img src="/reset/girl with scooter cutout.png" alt="Free laundry pickup delivery Geneva" style={{ maxWidth: '90%' }} />
+              <img
+                src="/reset/lavorama-geneva-doorstep-pickup-bag-lifestyle.jpeg"
+                alt="Free laundry pickup delivery Geneva"
+                style={{ maxWidth: '100%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }}
+              />
             </div>
           </div>
         </div>

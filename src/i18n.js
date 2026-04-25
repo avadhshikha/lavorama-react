@@ -7,7 +7,7 @@ export const translations = {
       home: 'Accueil',
       about: 'À propos',
       selfService: 'Libre-service',
-      pickup: 'Ramassage',
+      pickup: 'Pickup',
       pricing: 'Tarifs',
       contact: 'Contact',
     },

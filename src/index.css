@@ -184,13 +184,20 @@ header {
   flex: 1;
   padding-bottom: 5rem;
 }
-.hero-grid .hero-img {
-  flex: 1;
+.hero-grid > div:first-child {
+  flex: 1 1 340px;
+  min-width: 280px;
+}
+.hero-grid .hero-img,
+.hero-grid > div:last-child {
+  flex: 1 1 340px;
+  min-width: 280px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-.hero-grid .hero-img img { max-width: 100%; }
+.hero-grid .hero-img img,
+.hero-grid > div:last-child img { max-width: 100%; }
 .dots-pattern {
   position: absolute;
   top: 10%;

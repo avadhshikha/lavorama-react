@@ -50,8 +50,12 @@ function SelfService() {
                 <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp Us</a>
               </div>
             </div>
-            <div className="hero-img">
-              <img src="/reset/lavorama-geneva-pointing-washer-self-service-lifestyle.jpeg" alt="Self-service laundromat Geneva" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+            <div className="hero-img" style={{ minWidth: '300px' }}>
+              <img
+                src="/reset/lavorama-geneva-pointing-washer-self-service-lifestyle.jpeg"
+                alt="Self-service laundromat Geneva"
+                style={{ maxWidth: '100%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }}
+              />
             </div>
           </div>
         </div>
