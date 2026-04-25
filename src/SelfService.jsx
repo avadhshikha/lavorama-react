@@ -36,12 +36,12 @@ function SelfService() {
       <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
         <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '18%', width: '200px', opacity: 0.35 }} />
         <div className="container">
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'flex-end' }}>
-            <div style={{ flex: 1, paddingBottom: '4rem' }}>
+          <div className="hero-grid">
+            <div style={{ paddingBottom: '4rem' }}>
               <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
                 Self-service laundromat Geneva
               </div>
-              <h1 style={{ fontFamily: 'Fredoka', fontSize: '3.2rem', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2rem, 5vw, 3.2rem)', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>
                 Self-Service Laundromat in Geneva — Open Every Day, 7 AM to 11 PM
               </h1>
               <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>Lavorama is Geneva's most modern self-service laundromat, located at Rue des Pâquis 43. Industrial washers from 7–20 kg, detergent always included, no coins needed. Open every day of the year.</p>
@@ -50,7 +50,7 @@ function SelfService() {
                 <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp Us</a>
               </div>
             </div>
-            <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+            <div className="hero-img">
               <img src="/reset/girl with bucket showing up 1 finger cutout.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
@@ -61,7 +61,7 @@ function SelfService() {
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
           <h2>Our Self-Service Washing Machines in Geneva</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', alignItems: 'start' }}>
+          <div className="pricing-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', alignItems: 'start' }}>
             {machines.map((m, i) => (
               <div key={i} style={{ background: m.popular ? 'var(--primary-light)' : 'var(--bg-light)', borderRadius: '20px', padding: '2rem', border: m.popular ? '2px solid var(--primary)' : '1px solid var(--border)', position: 'relative', transform: m.popular ? 'scale(1.03)' : 'none' }}>
                 {m.popular && <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', background: 'var(--primary)', color: 'white', padding: '0.25rem 1rem', borderRadius: '50px', fontSize: '0.8rem', fontFamily: 'Fredoka', whiteSpace: 'nowrap' }}>Most Popular</div>}
@@ -79,7 +79,7 @@ function SelfService() {
       <section className="section bg-light">
         <div className="container">
           <h2>How It Works — Step by Step</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1rem' }}>
+          <div className="steps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1rem' }}>
             {steps.map((s, i) => (
               <div key={i} style={{ textAlign: 'center' }}>
                 <div style={{ width: '65px', height: '65px', borderRadius: '50%', background: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem', margin: '0 auto 1rem', boxShadow: '0 4px 15px rgba(108,191,191,0.3)' }}>{s.icon}</div>
@@ -112,12 +112,12 @@ function SelfService() {
       {/* ── 5. WHAT YOU CAN WASH ── */}
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, minWidth: '280px', position: 'relative', textAlign: 'center' }}>
+          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 280px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', left: '-10px', width: '200px', opacity: 0.3, zIndex: 0 }} />
               <img src="/reset/model/lavorama-geneva-detergent-lift-laundry-room-lifestyle.png" alt="Self-service laundromat Geneva" style={{ maxWidth: '85%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
-            <div style={{ flex: 1, minWidth: '280px' }}>
+            <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>What Can You Wash at Lavorama Geneva?</h2>
               <p style={{ marginBottom: '1.5rem' }}>Our industrial machines handle virtually any type of laundry — things your home washer simply cannot manage:</p>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem' }}>

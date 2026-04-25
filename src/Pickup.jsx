@@ -98,12 +98,12 @@ function Pickup() {
       <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
         <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '20%', width: '220px', opacity: 0.35 }} />
         <div className="container">
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'flex-end' }}>
-            <div style={{ flex: 1, paddingBottom: '4rem' }}>
+          <div className="hero-grid">
+            <div style={{ paddingBottom: '4rem' }}>
               <div style={{ display: 'inline-block', background: 'var(--primary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem' }}>
                 🚚 Free Pickup & Delivery — All of Geneva
               </div>
-              <h1 style={{ fontFamily: 'Fredoka', fontSize: '3.2rem', lineHeight: 1.1, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '1.2rem' }}>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2rem, 5vw, 3.2rem)', lineHeight: 1.1, color: 'var(--primary)', textTransform: 'uppercase', marginBottom: '1.2rem' }}>
                 Free Laundry Pickup &amp; Delivery Service in Geneva
               </h1>
               <p style={{ fontSize: '1.05rem', maxWidth: '480px', marginBottom: '1rem' }}>Too busy for laundry? Lavorama comes to you. We collect your clothes from anywhere in Geneva, wash and dry them with professional care, and deliver them back — freshly folded and ready to wear.</p>
@@ -113,7 +113,7 @@ function Pickup() {
                 <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp +41 79 565 41 42</a>
               </div>
             </div>
-            <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'flex-end' }}>
+            <div className="hero-img">
               <img src="/reset/girl with scooter cutout.png" alt="Free laundry pickup delivery Geneva" style={{ maxWidth: '90%' }} />
             </div>
           </div>
@@ -137,7 +137,7 @@ function Pickup() {
           <p style={{ textAlign: 'center', color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Simple process</p>
           <h2>How Our Geneva Laundry Pickup Service Works — 4 Easy Steps</h2>
           <p style={{ textAlign: 'center', maxWidth: '600px', margin: '-1.5rem auto 3rem' }}>From booking to delivery, we've made the whole process as simple as possible.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+          <div className="steps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
             {[
               { icon: '📱', step: 1, title: 'Book Online or on WhatsApp', desc: 'Visit lavorama.ch or message us at +41 79 565 41 42. Select your pickup date, time, and address anywhere in Geneva. Takes less than 60 seconds.' },
               { icon: '✅', step: 2, title: 'Instant Confirmation Sent to You', desc: 'As soon as you submit your booking, you\'ll receive a confirmation with your scheduled pickup details. No uncertainty — you\'ll know exactly when we\'re coming.' },
@@ -165,7 +165,7 @@ function Pickup() {
           <p style={{ textAlign: 'center', color: 'rgba(255,255,255,0.8)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Why Geneva trusts us</p>
           <h2 style={{ color: 'white' }}>The Best Laundry Pickup Service in Geneva — Here's Why</h2>
           <p style={{ color: 'rgba(255,255,255,0.85)', textAlign: 'center', maxWidth: '600px', margin: '-1rem auto 3rem', fontWeight: 400 }}>We serve hundreds of Geneva residents every week. Here's what makes our pickup service stand out.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+          <div className="why-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
             {reasons.map((r, i) => (
               <div key={i} style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', borderRadius: '16px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.25)' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>{r.icon}</div>
@@ -180,8 +180,8 @@ function Pickup() {
       {/* ── 5. BENEFITS LIST ── */}
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, minWidth: '280px' }}>
+          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>What You Get With Every Lavorama Geneva Pickup</h2>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.8rem', marginTop: '1.5rem' }}>
                 {['Superior stain removal guaranteed','Affordable, transparent pricing — no hidden fees','Online booking and real-time order tracking','Special treatment options for all garment types','Time saved — we handle everything for you','Maximum convenience — we come to your door','Longer-lasting clothes with professional care','Low-energy, eco-friendly washing machines'].map(b => (
@@ -191,7 +191,7 @@ function Pickup() {
                 ))}
               </ul>
             </div>
-            <div style={{ flex: 1, minWidth: '280px', position: 'relative', textAlign: 'center' }}>
+            <div style={{ flex: '1 1 260px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-10px', width: '250px', opacity: 0.3, zIndex: 0 }} />
               <img src="/reset/lavorama-geneva-doorstep-pickup-bag-lifestyle.jpeg" alt="Laundry pickup service Geneva" style={{ maxWidth: '80%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
@@ -230,7 +230,7 @@ function Pickup() {
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
           <h2>What Geneva Customers Say About Our Pickup Service</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem', maxWidth: '800px', margin: '0 auto' }}>
             {[
               { name: 'Anna Müller', img: 'imgi_15_p7.jpg', role: 'Pickup & delivery customer, Geneva', review: '"The free pickup and delivery has completely changed my week. Everything comes back perfectly folded, always on time. I\'d never go back to doing it myself."' },
               { name: 'Sofia Zimmermann', img: 'imgi_14_p3.jpg', role: 'Regular pickup customer, Geneva', review: '"As a busy professional in Geneva, Lavorama\'s pickup service has been an absolute lifesaver. Exceptional quality, very reasonable prices, and they handle everything. Highly recommended."' },

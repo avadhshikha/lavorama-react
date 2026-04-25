@@ -27,7 +27,7 @@ function Contact() {
       {/* Info Cards */}
       <section className="section" style={{ background: 'white' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', marginBottom: '4rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
             {[
               { icon: '📍', title: 'Our Address', detail: 'Rue des Pâquis 43\n1201 Genève, Switzerland', bg: 'var(--primary)' },
               { icon: '📞', title: 'Phone & WhatsApp', detail: '+41 79 565 41 42', bg: 'var(--secondary)' },
@@ -45,8 +45,8 @@ function Contact() {
           </div>
 
           {/* Form + Image */}
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1.4, minWidth: '300px' }}>
+          <div style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 300px', minWidth: '280px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem', marginBottom: '0.5rem' }}>Book a Pickup or Machine in Geneva</h2>
               <p style={{ marginBottom: '2rem' }}>Fill in your details and we'll confirm within a few hours. Available 7 days a week.</p>
               {submitted ? (
@@ -106,7 +106,7 @@ function Contact() {
                 </form>
               )}
             </div>
-            <div style={{ flex: 0.7, minWidth: '240px', position: 'relative' }}>
+            <div style={{ flex: '0 1 300px', minWidth: '240px', position: 'relative' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-20px', width: '250px', opacity: 0.3, zIndex: 0 }} />
               <img src="/reset/lavorama-geneva-phone-support-transparent-cutout.png" alt="Contact Lavorama Geneva" style={{ maxWidth: '90%', position: 'relative', zIndex: 1 }} />
             </div>
@@ -117,7 +117,7 @@ function Contact() {
       {/* Hours + Map */}
       <section className="section bg-light">
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'start' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem', alignItems: 'start' }}>
             <div>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem', marginBottom: '2rem' }}>Opening Hours</h2>
               {[

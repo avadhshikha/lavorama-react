@@ -69,7 +69,7 @@ function About() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h1 style={{
             fontFamily: 'Fredoka',
-            fontSize: '4.5rem',
+            fontSize: 'clamp(2.2rem, 8vw, 4.5rem)',
             fontWeight: 700,
             color: 'var(--primary)',
             textTransform: 'uppercase',
@@ -82,7 +82,7 @@ function About() {
       <section className="section" style={{ background: 'white' }}>
         <div className="container two-col-section">
           <div className="text-wrapper">
-            <h2 style={{ textAlign: 'left', fontSize: '2.8rem', lineHeight: 1.15, marginBottom: '1.5rem' }}>
+            <h2 style={{ textAlign: 'left', fontSize: 'clamp(1.8rem, 5vw, 2.8rem)', lineHeight: 1.15, marginBottom: '1.5rem' }}>
               {c.priorityTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}<br/></React.Fragment>)}
             </h2>
             <p>{c.priorityP1}</p>
@@ -120,7 +120,7 @@ function About() {
       <section className="section" style={{ background: 'white' }}>
         <div className="container two-col-section">
           <div className="text-wrapper">
-            <h2 style={{ textAlign: 'left', fontSize: '2.8rem', lineHeight: 1.15, marginBottom: '1.5rem' }}>
+            <h2 style={{ textAlign: 'left', fontSize: 'clamp(1.8rem, 5vw, 2.8rem)', lineHeight: 1.15, marginBottom: '1.5rem' }}>
               {c.cleaningTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}<br/></React.Fragment>)}
             </h2>
             <p>{c.cleaningDesc}</p>
@@ -142,8 +142,8 @@ function About() {
 
       {/* 5. Join Our Newsletter */}
       <section className="bg-teal" style={{ padding: 0, overflow: 'hidden' }}>
-        <div className="container two-col-section" style={{ alignItems: 'flex-end', gap: '2rem' }}>
-          <div style={{ width: '50%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+        <div className="container newsletter-section-inner" style={{ display: 'flex', alignItems: 'flex-end', gap: '2rem' }}>
+          <div style={{ width: '50%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexShrink: 0 }}>
             <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '10%', left: '0', width: '320px', opacity: 0.25, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
             <img
               src="/reset/girl with bucket cutout.png"
@@ -151,7 +151,7 @@ function About() {
               style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }}
             />
           </div>
-          <div style={{ width: '50%', padding: '4rem 0' }}>
+          <div style={{ flex: 1, padding: '4rem 0' }}>
             <h2 style={{ textAlign: 'left', fontSize: '2.8rem', color: 'white', marginBottom: '1rem' }}>
               {c.newsletterTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}<br/></React.Fragment>)}
             </h2>

@@ -38,7 +38,7 @@ function Pricing() {
         <div className="container">
           <h2>Self-Service Washing Machine Prices — Geneva</h2>
           <p style={{ textAlign: 'center', maxWidth: '580px', margin: '-1.5rem auto 3rem' }}>Clear, affordable, no hidden fees. Detergent is always included — no coins needed.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', alignItems: 'start' }}>
+          <div className="pricing-grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', alignItems: 'start' }}>
             {machines.map((plan, i) => (
               <div key={i} style={{ background: plan.popular ? 'var(--primary-light)' : 'var(--bg-light)', borderRadius: '20px', padding: '2rem', boxShadow: '0 4px 20px rgba(108,191,191,0.12)', border: plan.popular ? '2px solid var(--primary)' : '1px solid var(--border)', position: 'relative', transform: plan.popular ? 'scale(1.04)' : 'none' }}>
                 {plan.popular && <div style={{ position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)', background: 'var(--primary)', color: 'white', padding: '0.25rem 1rem', borderRadius: '50px', fontSize: '0.8rem', fontFamily: 'Fredoka', whiteSpace: 'nowrap' }}>Most Popular</div>}
@@ -59,8 +59,8 @@ function Pricing() {
       {/* ── PICKUP PRICING ── */}
       <section className="section bg-light">
         <div className="container">
-          <div style={{ display: 'flex', gap: '4rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: 1, minWidth: '280px' }}>
+          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
+            <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>Pickup &amp; Delivery Service Price</h2>
               <p>Our laundry pickup and delivery service across Geneva is priced based on the weight and volume of your laundry. Contact us for an exact quote — or request a pickup and we'll confirm your price before we collect.</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1.5rem' }}>
@@ -73,7 +73,7 @@ function Pricing() {
               </div>
               <a href="/pickup" className="btn btn-orange" style={{ marginTop: '2rem', display: 'inline-block' }}>Get a Free Pickup Quote</a>
             </div>
-            <div style={{ flex: 1, minWidth: '280px', position: 'relative', textAlign: 'center' }}>
+            <div style={{ flex: '1 1 260px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '220px', opacity: 0.3, zIndex: 0 }} />
               <img src="/reset/lavorama-geneva-ok-pricing-tag-promotional.jpeg" alt="Laundry pickup delivery Geneva pricing" style={{ maxWidth: '80%', position: 'relative', zIndex: 1 }} />
             </div>
@@ -87,7 +87,7 @@ function Pricing() {
         <img src="/reset/imgi_2_ele2.png" alt="" style={{ position: 'absolute', top: '20%', right: '6%', width: '80px', opacity: 0.8 }} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h2 style={{ color: 'white' }}>What's Always Included in Your Price</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', maxWidth: '800px', margin: '0 auto' }}>
             {[
               { icon: '🌿', title: 'Eco-Certified Detergent', desc: 'Professional, biodegradable formula — automatically dispensed for every wash at no extra cost.' },
               { icon: '📱', title: 'Touchscreen Guidance', desc: 'Simple touchscreen guides you step by step. No experience or coins needed.' },
