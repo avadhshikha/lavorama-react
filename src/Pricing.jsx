@@ -87,7 +87,7 @@ function Pricing() {
             </div>
             <div style={{ flex: '1 1 260px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '220px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/imgi_22_LAVORAMA-CUTE-MODEL-3-1-1024x792.png" alt="Laundry pickup delivery Geneva pricing" style={{ maxWidth: '80%', position: 'relative', zIndex: 1 }} />
+              <img src="/reset/lavorama-geneva-ok-pricing-tag-promotional.jpeg" alt="Laundry pickup delivery Geneva pricing" style={{ maxWidth: '80%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
             </div>
           </div>
         </div>
