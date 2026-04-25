@@ -23,13 +23,25 @@ function Pricing() {
       <Navbar active="Home" />
 
       {/* ── HERO ── */}
-      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', left: '10%', width: '200px', opacity: 0.4 }} />
-        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', bottom: '-10px', right: '10%', width: '180px', opacity: 0.3, transform: 'rotate(180deg)' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <p style={{ color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Transparent pricing</p>
-          <h1 style={{ fontFamily: 'Fredoka', fontSize: '3.5rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '3px' }}>Laundry Prices in Geneva</h1>
-          <p style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.05rem' }}>At Lavorama Geneva, we believe in total pricing transparency. What you see is what you pay — no surcharges, no surprise fees. Professional detergent is included in every single wash.</p>
+      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
+        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '18%', width: '200px', opacity: 0.35 }} />
+        <div className="container">
+          <div className="hero-grid">
+            <div style={{ paddingBottom: '4rem' }}>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                Transparent pricing
+              </div>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2rem, 5vw, 3.5rem)', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>Laundry Prices in Geneva</h1>
+              <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>At Lavorama Geneva, we believe in total pricing transparency. What you see is what you pay — no surcharges, no surprise fees. Professional detergent is included in every single wash.</p>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="#pricing" className="btn btn-orange">See Prices</a>
+                <a href="/contact" className="btn btn-teal">Book Now</a>
+              </div>
+            </div>
+            <div className="hero-img">
+              <img src="/reset/lavorama-geneva-ok-pricing-tag-promotional.jpeg" alt="Laundry prices Geneva" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+            </div>
+          </div>
         </div>
       </section>
 

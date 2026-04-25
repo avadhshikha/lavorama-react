@@ -14,13 +14,25 @@ function Contact() {
       <Navbar active="Contact" />
 
       {/* Hero */}
-      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', left: '10%', width: '200px', opacity: 0.4 }} />
-        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', bottom: '-10px', right: '10%', width: '180px', opacity: 0.3, transform: 'rotate(180deg)' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <p style={{ color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Get in touch</p>
-          <h1 style={{ fontFamily: 'Fredoka', fontSize: '4rem', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '3px' }}>Contact Us</h1>
-          <p style={{ maxWidth: '520px', margin: '0 auto', fontSize: '1.1rem' }}>Book a machine, schedule a pickup, or just ask a question. We're here to help, seven days a week.</p>
+      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
+        <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '18%', width: '200px', opacity: 0.35 }} />
+        <div className="container">
+          <div className="hero-grid">
+            <div style={{ paddingBottom: '4rem' }}>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                Get in touch
+              </div>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2rem, 5vw, 4rem)', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>Contact Us</h1>
+              <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>Book a machine, schedule a pickup, or just ask a question. We're here to help, seven days a week.</p>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="tel:+41795654142" className="btn btn-orange">📞 Call Us Now</a>
+                <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp</a>
+              </div>
+            </div>
+            <div className="hero-img">
+              <img src="/reset/lavorama-geneva-booking-desk-notes-lifestyle.jpeg" alt="Book laundry pickup Geneva" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+            </div>
+          </div>
         </div>
       </section>
 

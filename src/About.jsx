@@ -56,25 +56,25 @@ function About() {
       <Navbar active="/about" />
 
       {/* 1. About Us Hero */}
-      <section style={{
-        background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)',
-        padding: '5rem 0',
-        textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden',
-      }}>
-        {/* Paint splashes */}
-        <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-30px', left: '15%', width: '200px', opacity: 0.5 }} />
-        <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', bottom: '-20px', right: '15%', width: '180px', opacity: 0.3, transform: 'rotate(180deg)' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <h1 style={{
-            fontFamily: 'Fredoka',
-            fontSize: 'clamp(2.2rem, 8vw, 4.5rem)',
-            fontWeight: 700,
-            color: 'var(--primary)',
-            textTransform: 'uppercase',
-            letterSpacing: '4px',
-          }}>{c.title}</h1>
+      <section style={{ background: 'linear-gradient(180deg, #D6F0F4 0%, #EBF8FA 100%)', padding: '5rem 0 0', position: 'relative', overflow: 'hidden' }}>
+        <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '-30px', left: '5%', width: '200px', opacity: 0.4 }} />
+        <div className="container">
+          <div className="hero-grid">
+            <div style={{ paddingBottom: '4rem' }}>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.85rem', fontFamily: 'Fredoka', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
+                À propos de nous
+              </div>
+              <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2.2rem, 8vw, 4.5rem)', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>{c.title}</h1>
+              <p style={{ maxWidth: '440px', marginBottom: '2rem' }}>La laverie moderne de Genève — libre-service &amp; ramassage gratuit. Rue des Pâquis 43.</p>
+              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                <a href="/contact" className="btn btn-orange">Nous contacter</a>
+                <a href="/self-service-laundromat-geneva" className="btn btn-teal">Libre-service</a>
+              </div>
+            </div>
+            <div className="hero-img">
+              <img src="/reset/lavorama-geneva-detergent-lift-laundry-room-lifestyle.jpeg" alt="Lavorama Geneva laundromat" style={{ maxWidth: '90%', borderRadius: '16px', boxShadow: '0 20px 60px rgba(108,191,191,0.3)' }} />
+            </div>
+          </div>
         </div>
       </section>
 
