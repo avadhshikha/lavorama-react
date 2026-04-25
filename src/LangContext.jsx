@@ -32,26 +32,26 @@ export function useLang() {
 export function LangSwitcher() {
   const { lang, setLang } = useLang();
   const next = lang === 'fr'
-    ? { code: 'en', flag: '🇬🇧', label: 'EN', title: 'Switch to English' }
-    : { code: 'fr', flag: '🇫🇷', label: 'FR', title: 'Passer en Français' };
+    ? { code: 'en', label: 'EN', title: 'Switch to English' }
+    : { code: 'fr', label: 'FR', title: 'Passer en Français' };
 
   return (
     <button
       onClick={() => setLang(next.code)}
       title={next.title}
       style={{
-        display: 'flex', alignItems: 'center', gap: '6px',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
         padding: '6px 14px', borderRadius: '50px',
         border: '1px solid #E2E8F0',
         background: '#F1F5F9',
         color: '#334155',
         fontFamily: 'Fredoka', fontSize: '0.88rem', fontWeight: 600,
         cursor: 'pointer', transition: 'all 0.22s ease',
+        minWidth: '48px'
       }}
       onMouseEnter={e => { e.currentTarget.style.background = 'var(--primary)'; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = 'var(--primary)'; }}
       onMouseLeave={e => { e.currentTarget.style.background = '#F1F5F9'; e.currentTarget.style.color = '#334155'; e.currentTarget.style.borderColor = '#E2E8F0'; }}
     >
-      <span style={{ fontSize: '1rem' }}>{next.flag}</span>
       {next.label}
     </button>
   );
