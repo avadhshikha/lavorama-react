@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- PRIMARY SEO -->
-    <title>Lavorama | Self-Service Laundromat & Laundry Pickup Geneva | Rue des Pâquis</title>
-    <meta name="description" content="Lavorama is Geneva's modern laundromat at Rue des Pâquis 43. Self-service washers from CHF 6, free laundry pickup & delivery across Geneva. Open 7 days, 7AM–11PM." />
-    <meta name="keywords" content="laundromat Geneva, laverie automatique Genève, laundry pickup delivery Geneva, self-service laundry Geneva, washing machine Geneva, laundry service Pâquis Geneva" />
+    <!-- PRIMARY SEO — Français (langue par défaut) -->
+    <title>Lavorama | Laverie Automatique &amp; Ramassage de Linge Genève | Rue des Pâquis</title>
+    <meta name="description" content="Lavorama, la laverie moderne de Genève au Rue des Pâquis 43. Machines libre-service dès CHF 6, ramassage &amp; livraison gratuit à Genève. Ouvert 7j/7, 7h–23h." />
+    <meta name="keywords" content="laverie automatique Genève, laverie Pâquis, ramassage linge Genève, laundromat Geneva, laverie libre-service Genève, lessive Genève, blanchisserie Genève" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Lavorama" />
     <link rel="canonical" href="https://lavorama-react.vercel.app/" />
+    <!-- hreflang: bilingual SEO signals -->
+    <link rel="alternate" hreflang="fr" href="https://lavorama-react.vercel.app/" />
+    <link rel="alternate" hreflang="en" href="https://lavorama-react.vercel.app/" />
+    <link rel="alternate" hreflang="x-default" href="https://lavorama-react.vercel.app/" />
 
     <!-- OPEN GRAPH (Social sharing) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lavorama-react.vercel.app/" />
-    <meta property="og:title" content="Lavorama Geneva — Self-Service Laundromat & Laundry Pickup | Pâquis" />
-    <meta property="og:description" content="Geneva's modern laundromat at Rue des Pâquis 43. Washers from CHF 6, free pickup & delivery. Open 7 days a week." />
+    <meta property="og:title" content="Lavorama Genève — Laverie Automatique &amp; Ramassage de Linge | Pâquis" />
+    <meta property="og:description" content="La laverie moderne de Genève au Rue des Pâquis 43. Machines dès CHF 6, ramassage &amp; livraison gratuit. Ouvert 7j/7." />
     <meta property="og:locale" content="fr_CH" />
+    <meta property="og:locale:alternate" content="en_CH" />
     <meta property="og:site_name" content="Lavorama Geneva" />
 
     <!-- LOCAL BUSINESS SCHEMA MARKUP -->
@@ -83,7 +88,7 @@
     }
     </script>
 
-    <!-- FAQ SCHEMA -->
+    <!-- FAQ SCHEMA — Français (primary) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -91,26 +96,26 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a laundromat cost in Geneva?",
+          "name": "Combien coûte une laverie automatique à Genève ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "At Lavorama, prices start from CHF 6 for a 7 kg wash, CHF 12 for 15 kg, and CHF 16 for 20 kg. Detergent is always included."
+            "text": "Chez Lavorama, les prix commencent à CHF 6 pour un lavage de 7 kg, CHF 12 pour 15 kg, et CHF 16 pour 20 kg. Le détergent est toujours inclus."
           }
         },
         {
           "@type": "Question",
-          "name": "Is there a laundromat open on Sunday in Geneva?",
+          "name": "Y a-t-il une laverie ouverte le dimanche à Genève ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — Lavorama at Rue des Pâquis 43 is open every day including Sunday, from 7 AM to 11 PM."
+            "text": "Oui — Lavorama au Rue des Pâquis 43 est ouvert tous les jours y compris le dimanche, de 7h à 23h."
           }
         },
         {
           "@type": "Question",
-          "name": "Where is the nearest laundromat in Geneva?",
+          "name": "Où se trouve la laverie la plus proche à Genève ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Lavorama is centrally located at Rue des Pâquis 43, 1201 Genève — easily accessible from Pâquis, Eaux-Vives, Cornavin, and the city centre."
+            "text": "Lavorama est idéalement situé au Rue des Pâquis 43, 1201 Genève — facilement accessible depuis Pâquis, Eaux-Vives, Cornavin et le centre-ville."
           }
         }
       ]
