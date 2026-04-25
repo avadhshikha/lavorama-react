@@ -4,6 +4,9 @@ import Pickup from './Pickup.jsx';
 import Contact from './Contact.jsx';
 import SelfService from './SelfService.jsx';
 import Pricing from './Pricing.jsx';
+import Terms from './Terms.jsx';
+import Privacy from './Privacy.jsx';
+import Faq from './Faq.jsx';
 import { Navbar, PageFooter } from './components.jsx';
 import { useLang } from './LangContext.jsx';
 
@@ -18,6 +21,9 @@ function App() {
   if (currentPage === '/contact') return <Contact />;
   if (currentPage === '/self-service-laundromat-geneva') return <SelfService />;
   if (currentPage === '/laundry-prices-geneva') return <Pricing />;
+  if (currentPage === '/terms') return <Terms />;
+  if (currentPage === '/privacy') return <Privacy />;
+  if (currentPage === '/faq') return <Faq />;
 
   return (
     <>

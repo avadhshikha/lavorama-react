@@ -115,7 +115,7 @@ function PageFooter() {
             <h4 style={{ color: 'white', marginBottom: '1.5rem', fontFamily: 'Fredoka', fontSize: '1.1rem' }}>{f.info}</h4>
             <ul className="footer-links">
               {f.infoLinks.map(l => (
-                <li key={l}><a href="#" style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l}</a></li>
+                <li key={l.href}><a href={l.href} style={{ color: '#94A3B8', textDecoration: 'none', fontSize: '0.9rem' }}>{l.label}</a></li>
               ))}
             </ul>
           </div>
