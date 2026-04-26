@@ -166,8 +166,8 @@ function App() {
             ))}
           </div>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" className="btn btn-orange">{h.contactCta1}</a>
-            <a href="https://maps.google.com/?q=Rue+des+Pâquis+43+Geneva" target="_blank" rel="noopener noreferrer" className="btn btn-teal">{h.contactCta2}</a>
+            <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-orange">{h.contactCta1}</a>
+            <a href="/contact" className="btn btn-teal">{h.contactCta2}</a>
           </div>
         </div>
       </section>
