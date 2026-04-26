@@ -9,7 +9,6 @@ function Navbar({ active }) {
     { label: t.nav.home,        href: '/' },
     { label: t.nav.about,       href: '/about' },
     { label: t.nav.selfService, href: '/self-service-laundromat-geneva' },
-    { label: t.nav.pickup,      href: '/pickup' },
     { label: t.nav.pricing,     href: '/laundry-prices-geneva' },
     { label: t.nav.contact,     href: '/contact' },
   ];
@@ -102,7 +101,6 @@ function PageFooter() {
             <ul className="footer-links">
               {[
                 { label: f.links.selfService, href: '/self-service-laundromat-geneva' },
-                { label: f.links.pickup,      href: '/pickup' },
                 { label: f.links.pricing,     href: '/laundry-prices-geneva' },
                 { label: f.links.about,       href: '/about' },
               ].map(l => (
@@ -125,6 +123,7 @@ function PageFooter() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
               {[
                 { icon: '📍', text: 'Rue des Pâquis 43\n1201 Genève, Suisse' },
+                { icon: '📍', text: 'Rue Dancet 2\n1205 Genève, Suisse' },
                 { icon: '📞', text: '+41 79 565 41 42' },
                 { icon: '✉️', text: 'booking@lavorama.ch' },
                 { icon: '🕐', text: f.hours },

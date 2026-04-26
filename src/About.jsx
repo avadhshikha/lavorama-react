@@ -11,7 +11,7 @@ function About() {
       title: "À propos de nous",
       priorityTitle: "Votre lessive,\nNotre priorité",
       priorityP1: "Lavorama a été fondé avec une idée simple : rendre la lessive sans effort pour les résidents de Genève. Situés à la rue des Pâquis, nous proposons des machines industrielles performantes dans un environnement propre et moderne.",
-      priorityP2: "Que vous fassiez votre lessive vous-même ou utilisiez notre service de ramassage gratuit, nous garantissons des résultats impeccables à chaque fois.",
+      priorityP2: "Nous garantissons des résultats impeccables à chaque fois.",
       solutionsTitle: "Des solutions pour\nune vie active",
       solutionsDesc: "Nous savons que votre temps est précieux. C'est pourquoi nous avons équipé notre laverie de machines rapides et de détergents professionnels, pour que vous passiez moins de temps à laver et plus de temps à profiter de Genève.",
       solutionsCta: "Nous contacter",
@@ -31,7 +31,7 @@ function About() {
       title: "About Us",
       priorityTitle: "Your Laundry,\nOur Priority",
       priorityP1: "Lavorama was founded with a simple idea: making laundry effortless for Geneva residents. Located on Rue des Pâquis, we offer high-performance industrial machines in a clean, modern environment.",
-      priorityP2: "Whether you do your own laundry or use our free pickup service, we guarantee flawless results every single time.",
+      priorityP2: "We guarantee flawless results every single time.",
       solutionsTitle: "Laundry Solutions For\nA Busy Life",
       solutionsDesc: "We know your time is valuable. That's why we equipped our laundromat with fast machines and professional detergents, so you spend less time washing and more time enjoying Geneva.",
       solutionsCta: "Contact Us",
@@ -65,7 +65,7 @@ function About() {
                 À propos de nous
               </div>
               <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2.2rem, 8vw, 4.5rem)', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>{c.title}</h1>
-              <p style={{ maxWidth: '440px', marginBottom: '2rem' }}>La laverie moderne de Genève — libre-service &amp; ramassage gratuit. Rue des Pâquis 43.</p>
+              <p style={{ maxWidth: '440px', marginBottom: '2rem' }}>La laverie moderne de Genève — libre-service. Rue des Pâquis 43.</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="/contact" className="btn btn-orange">Nous contacter</a>
                 <a href="/self-service-laundromat-geneva" className="btn btn-teal">Libre-service</a>

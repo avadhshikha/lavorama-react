@@ -23,8 +23,8 @@ export default function Privacy() {
           </h3>
           <p>
             {lang === 'fr'
-              ? 'Nous collectons uniquement les informations nécessaires pour fournir nos services de ramassage et de livraison (nom, adresse, numéro de téléphone, e-mail).'
-              : 'We only collect the information necessary to provide our pickup and delivery services (name, address, phone number, email).'}
+              ? 'Nous collectons uniquement les informations nécessaires pour fournir nos services (nom, numéro de téléphone, e-mail).'
+              : 'We only collect the information necessary to provide our services (name, phone number, email).'}
           </p>
           <h3 style={{ marginTop: '2rem', marginBottom: '1rem', fontFamily: 'Fredoka', color: 'var(--secondary)' }}>
             {lang === 'fr' ? 'Utilisation des données' : 'Data Usage'}

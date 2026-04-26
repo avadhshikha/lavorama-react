@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import About from './About.jsx';
-import Pickup from './Pickup.jsx';
 import Contact from './Contact.jsx';
 import SelfService from './SelfService.jsx';
 import Pricing from './Pricing.jsx';
@@ -17,7 +16,6 @@ function App() {
   const currentPage = window.location.pathname;
 
   if (currentPage === '/about') return <About />;
-  if (currentPage === '/pickup') return <Pickup />;
   if (currentPage === '/contact') return <Contact />;
   if (currentPage === '/self-service-laundromat-geneva') return <SelfService />;
   if (currentPage === '/laundry-prices-geneva') return <Pricing />;
@@ -42,7 +40,6 @@ function App() {
             <p style={{ fontSize: '0.95rem', maxWidth: '440px' }}>{h.heroP2}</p>
             <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
               <a href="#pricing" className="btn btn-orange">{h.heroCta1}</a>
-              <a href="/pickup" className="btn btn-teal">{h.heroCta2}</a>
             </div>
           </div>
           <div className="image-wrapper hero-img">
@@ -69,18 +66,6 @@ function App() {
                 {h.selfServiceFeatures.map(f => <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', fontWeight: 600 }}><span style={{ color: 'var(--primary)' }}>✓</span>{f}</li>)}
               </ul>
               <a href="#pricing" className="btn btn-teal">{h.selfServiceCta}</a>
-            </div>
-            {/* Pickup */}
-            <div style={{ background: 'linear-gradient(160deg,#FFF8EC 0%,#FFFDF6 100%)', borderRadius: '20px', padding: '2.5rem', border: '1px solid #FFE0A0' }}>
-              <div style={{ width: '70px', height: '70px', background: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', marginBottom: '1.5rem', boxShadow: '0 4px 15px rgba(247,173,63,0.2)' }}>🚚</div>
-              <h3 style={{ fontFamily: 'Fredoka', color: 'var(--secondary)', fontSize: '1.6rem', marginBottom: '1rem' }}>
-                {h.pickupTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}{i === 0 && <br />}</React.Fragment>)}
-              </h3>
-              <p style={{ fontSize: '0.95rem', marginBottom: '1.5rem' }}>{h.pickupDesc}</p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '2rem' }}>
-                {h.pickupFeatures.map(f => <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', fontWeight: 600 }}><span style={{ color: 'var(--secondary)' }}>✓</span>{f}</li>)}
-              </ul>
-              <a href="/pickup" className="btn btn-orange">{h.pickupCta}</a>
             </div>
           </div>
         </div>

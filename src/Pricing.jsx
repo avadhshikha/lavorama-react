@@ -5,7 +5,6 @@ const faqs = [
   { q: 'How much does it cost to use a laundromat in Geneva?', a: 'At Lavorama, prices start from CHF 6 for a 7 kg wash, CHF 12 for 15 kg, and CHF 16 for 20 kg. Detergent is always included.' },
   { q: 'Is detergent included in the price at Lavorama?', a: 'Yes, always. Professional eco-certified detergent is automatically dispensed at no extra cost with every wash.' },
   { q: 'How much does a dryer cost at Lavorama Geneva?', a: 'The dryer costs CHF 1.50 per 10 minutes.' },
-  { q: 'Is the laundry pickup service free in Geneva?', a: 'Pickup and delivery are free. You pay only for the washing and drying, quoted by weight.' },
 ];
 
 function Pricing() {
@@ -68,30 +67,6 @@ function Pricing() {
         </div>
       </section>
 
-      {/* ── PICKUP PRICING ── */}
-      <section className="section bg-light">
-        <div className="container">
-          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 280px', minWidth: '260px' }}>
-              <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem' }}>Pickup &amp; Delivery Service Price</h2>
-              <p>Our laundry pickup and delivery service across Geneva is priced based on the weight and volume of your laundry. Contact us for an exact quote — or request a pickup and we'll confirm your price before we collect.</p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginTop: '1.5rem' }}>
-                {[{ label: 'Free pickup', val: 'Included — always' },{ label: 'Free delivery', val: 'Included — always' },{ label: 'Washing & drying', val: 'Quoted by weight' },{ label: 'Folding', val: 'Always included' }].map(r => (
-                  <div key={r.label} style={{ display: 'flex', justifyContent: 'space-between', background: 'white', borderRadius: '12px', padding: '0.9rem 1.5rem', boxShadow: '0 2px 10px rgba(108,191,191,0.1)', borderLeft: '4px solid var(--primary)' }}>
-                    <span style={{ fontFamily: 'Fredoka', fontSize: '1rem' }}>{r.label}</span>
-                    <span style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: '1rem' }}>{r.val}</span>
-                  </div>
-                ))}
-              </div>
-              <a href="/pickup" className="btn btn-orange" style={{ marginTop: '2rem', display: 'inline-block' }}>Get a Free Pickup Quote</a>
-            </div>
-            <div style={{ flex: '1 1 260px', minWidth: '260px', position: 'relative', textAlign: 'center' }}>
-              <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-10px', right: '-10px', width: '220px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/lavorama-geneva-ok-pricing-tag-promotional.jpeg" alt="Laundry pickup delivery Geneva pricing" style={{ maxWidth: '80%', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── ALWAYS INCLUDED ── */}
       <section className="section bg-teal" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -125,7 +100,6 @@ function Pricing() {
           <p>With washes starting at just CHF 6 — detergent included — Lavorama offers outstanding value for Geneva. When you factor in the cost of detergent, electricity, and wear on a home machine, our prices are extremely competitive. And with our industrial machines, you get results no home washer can match.</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
             <a href="/contact" className="btn btn-orange">Book a Machine Now</a>
-            <a href="/pickup" className="btn btn-teal">Get Pickup Quote</a>
           </div>
         </div>
       </section>

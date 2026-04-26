@@ -15,8 +15,8 @@ export default function Terms() {
           </h1>
           <p>
             {lang === 'fr' 
-              ? 'Bienvenue sur Lavorama. Ces conditions générales définissent les règles d\'utilisation de nos services de laverie libre-service et de ramassage & livraison à Genève.'
-              : 'Welcome to Lavorama. These terms and conditions outline the rules and regulations for the use of our self-service laundromat and pickup & delivery services in Geneva.'}
+              ? 'Bienvenue sur Lavorama. Ces conditions générales définissent les règles d\'utilisation de nos services de laverie libre-service à Genève.'
+              : 'Welcome to Lavorama. These terms and conditions outline the rules and regulations for the use of our self-service laundromat in Geneva.'}
           </p>
           <h3 style={{ marginTop: '2rem', marginBottom: '1rem', fontFamily: 'Fredoka', color: 'var(--secondary)' }}>
             {lang === 'fr' ? '1. Services' : '1. Services'}
@@ -31,8 +31,8 @@ export default function Terms() {
           </h3>
           <p>
             {lang === 'fr'
-              ? 'Tous les prix sont en CHF. Le paiement des services de ramassage doit être effectué avant ou au moment de la livraison. Les services en libre-service doivent être payés au terminal sur place.'
-              : 'All prices are in CHF. Payment for pickup services must be completed before or at the time of delivery. Self-service facilities must be paid at the on-site terminal.'}
+              ? 'Tous les prix sont en CHF. Les services en libre-service doivent être payés au terminal sur place.'
+              : 'All prices are in CHF. Self-service facilities must be paid at the on-site terminal.'}
           </p>
           <p style={{ marginTop: '3rem', fontSize: '0.85rem', color: '#666' }}>
             {lang === 'fr' ? 'Dernière mise à jour : Octobre 2023' : 'Last updated: October 2023'}
