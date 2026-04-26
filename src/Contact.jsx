@@ -3,8 +3,6 @@ import { Navbar, PageFooter } from './components.jsx';
 
 function Contact() {
   return (
-
-  return (
     <>
       <Navbar active="Contact" />
 
