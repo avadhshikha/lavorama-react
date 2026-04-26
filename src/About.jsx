@@ -140,41 +140,7 @@ function About() {
         </div>
       </section>
 
-      {/* 5. Join Our Newsletter */}
-      <section className="bg-teal" style={{ padding: 0, overflow: 'hidden' }}>
-        <div className="container newsletter-section-inner" style={{ display: 'flex', alignItems: 'flex-end', gap: '2rem' }}>
-          <div style={{ width: '50%', position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', flexShrink: 0 }}>
-            <img src="/reset/imgi_41_s2-300x291.png" alt="splash" style={{ position: 'absolute', top: '10%', left: '0', width: '320px', opacity: 0.25, filter: 'brightness(0) invert(1)', zIndex: 0 }} />
-            <img
-              src="/reset/imgi_8_lavorama-model-cute--814x1024.png"
-              alt="Newsletter model"
-              style={{ maxHeight: '420px', position: 'relative', zIndex: 1 }}
-            />
-          </div>
-          <div style={{ flex: 1, padding: '4rem 0' }}>
-            <h2 style={{ textAlign: 'left', fontSize: '2.8rem', color: 'white', marginBottom: '1rem' }}>
-              {c.newsletterTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}<br/></React.Fragment>)}
-            </h2>
-            <p style={{ color: 'white', fontWeight: 400, fontSize: '0.95rem' }}>
-              {c.newsletterDesc}
-            </p>
-            <form
-              className="newsletter-form"
-              onSubmit={(e) => { e.preventDefault(); alert(c.newsletterSuccess); setEmail(''); }}
-              style={{ marginTop: '1.5rem' }}
-            >
-              <input
-                type="email"
-                placeholder={c.newsletterPlaceholder}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-              <button type="submit" className="btn btn-orange">{c.newsletterCta}</button>
-            </form>
-          </div>
-        </div>
-      </section>
+
 
       <PageFooter />
     </>

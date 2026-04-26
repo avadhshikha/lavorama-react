@@ -83,7 +83,37 @@ function PageFooter() {
   const f = t.footer;
 
   return (
-    <footer style={{ background: '#1E293B', padding: '4rem 0 2rem' }}>
+    <>
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/41795654142" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          right: '30px',
+          background: '#25D366',
+          color: 'white',
+          width: '60px',
+          height: '60px',
+          borderRadius: '50%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '2.2rem',
+          boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
+          zIndex: 9999,
+          textDecoration: 'none',
+          transition: 'transform 0.3s ease'
+        }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+        aria-label="Contact us on WhatsApp"
+      >
+        💬
+      </a>
+      <footer style={{ background: '#1E293B', padding: '4rem 0 2rem' }}>
       <div className="container">
         <div className="footer-grid">
           <div className="footer-col" style={{ paddingRight: '1rem' }}>
@@ -147,6 +177,7 @@ function PageFooter() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
 

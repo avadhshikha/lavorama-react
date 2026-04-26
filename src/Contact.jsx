@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, PageFooter } from './components.jsx';
 
 function Contact() {
-  const [form, setForm] = useState({ firstName: '', lastName: '', phone: '', email: '', date: '', time: '', address: '', service: 'Self-service machine booking' });
-  const [submitted, setSubmitted] = useState(false);
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
-  const handleSubmit = e => { e.preventDefault(); setSubmitted(true); };
-
-  const inputStyle = { padding: '0.9rem 1.2rem', border: '1.5px solid var(--border)', borderRadius: '12px', fontFamily: 'Nunito', fontSize: '1rem', background: 'white', outline: 'none', width: '100%' };
+  return (
 
   return (
     <>
@@ -56,62 +51,14 @@ function Contact() {
             ))}
           </div>
 
-          {/* Form + Image */}
-          <div style={{ display: 'flex', gap: '3rem', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+          {/* Booking CTA + Image */}
+          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
             <div style={{ flex: '1 1 300px', minWidth: '280px' }}>
               <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem', marginBottom: '0.5rem' }}>Book a Machine in Geneva</h2>
-              <p style={{ marginBottom: '2rem' }}>Fill in your details and we'll confirm within a few hours. Available 7 days a week.</p>
-              {submitted ? (
-                <div style={{ background: 'var(--primary-light)', border: '2px solid var(--primary)', borderRadius: '20px', padding: '3rem', textAlign: 'center' }}>
-                  <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎉</div>
-                  <h3 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: '1.8rem' }}>Request Received!</h3>
-                  <p>Thank you, <strong>{form.firstName}</strong>! We'll confirm your booking at <strong>{form.email}</strong> shortly.</p>
-                  <button onClick={() => setSubmitted(false)} className="btn btn-teal" style={{ marginTop: '1rem' }}>Send Another Request</button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>First Name</label>
-                      <input type="text" name="firstName" value={form.firstName} onChange={handleChange} placeholder="Marie" required style={inputStyle} />
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Last Name</label>
-                      <input type="text" name="lastName" value={form.lastName} onChange={handleChange} placeholder="Dupont" required style={inputStyle} />
-                    </div>
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Phone Number</label>
-                      <input type="tel" name="phone" value={form.phone} onChange={handleChange} placeholder="+41 79 000 00 00" style={inputStyle} />
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Email Address</label>
-                      <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="marie@example.com" required style={inputStyle} />
-                    </div>
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.2rem' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Date</label>
-                      <input type="date" name="date" value={form.date} onChange={handleChange} required style={inputStyle} />
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                      <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Preferred Time</label>
-                      <input type="time" name="time" value={form.time} onChange={handleChange} style={inputStyle} />
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                    <label style={{ fontFamily: 'Fredoka', color: 'var(--primary)' }}>Service Needed</label>
-                    <select name="service" value={form.service} onChange={handleChange} style={inputStyle}>
-                      <option>Self-service machine booking</option>
-                      <option>General question</option>
-                    </select>
-                  </div>
-                  <button type="submit" className="btn btn-orange" style={{ fontSize: '1.1rem', marginTop: '0.5rem' }}>
-                    Book a Machine in Geneva
-                  </button>
-                </form>
-              )}
+              <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>To book a machine or ask a question, please message us directly on WhatsApp. We typically reply within minutes!</p>
+              <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem', padding: '1rem 2rem' }}>
+                <span style={{ fontSize: '1.5rem' }}>💬</span> Message us on WhatsApp
+              </a>
             </div>
             <div style={{ flex: '0 1 300px', minWidth: '240px', position: 'relative' }}>
               <img src="/reset/imgi_41_s2-300x291.png" alt="" style={{ position: 'absolute', top: '-20px', right: '-20px', width: '250px', opacity: 0.3, zIndex: 0 }} />
