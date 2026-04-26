@@ -52,20 +52,32 @@ function App() {
       <section className="section">
         <div className="container">
           <p style={{ textAlign: 'center', color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{h.servicesLabel}</p>
-          <h2>{h.servicesTitle}</h2>
-          <p style={{ textAlign: 'center', maxWidth: '620px', margin: '-1.5rem auto 3rem' }}>{h.servicesSubtitle}</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-            {/* Self-Service */}
-            <div style={{ background: 'linear-gradient(160deg,#E2F7F7 0%,#F5FDFD 100%)', borderRadius: '20px', padding: '2.5rem', border: '1px solid var(--border)' }}>
-              <div style={{ width: '70px', height: '70px', background: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2rem', marginBottom: '1.5rem', boxShadow: '0 4px 15px rgba(108,191,191,0.2)' }}>🏪</div>
-              <h3 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: '1.6rem', marginBottom: '1rem' }}>
+          <h2 style={{ marginBottom: '3rem' }}>{h.servicesTitle}</h2>
+          
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', alignItems: 'center' }}>
+            <div style={{ flex: '1 1 400px' }}>
+              <div style={{ position: 'relative' }}>
+                <div style={{ position: 'absolute', top: '-15px', left: '-15px', width: '100%', height: '100%', background: 'var(--primary-light)', borderRadius: '24px', zIndex: 0 }}></div>
+                <img src="/reset/lavorama-geneva-booking-desk-notes-lifestyle.jpeg" alt="Lavorama Geneva self-service" style={{ position: 'relative', zIndex: 1, borderRadius: '24px', width: '100%', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }} />
+              </div>
+            </div>
+            <div style={{ flex: '1 1 400px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', background: '#E2F7F7', padding: '0.5rem 1rem', borderRadius: '50px', marginBottom: '1.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '0.9rem' }}>
+                <span style={{ fontSize: '1.2rem' }}>🏪</span> {h.servicesSubtitle}
+              </div>
+              <h3 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', fontSize: 'clamp(2rem, 4vw, 2.8rem)', lineHeight: 1.1, marginBottom: '1.5rem' }}>
                 {h.selfServiceTitle.split('\n').map((l, i) => <React.Fragment key={i}>{l}{i === 0 && <br />}</React.Fragment>)}
               </h3>
-              <p style={{ fontSize: '0.95rem', marginBottom: '1.5rem' }}>{h.selfServiceDesc}</p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '2rem' }}>
-                {h.selfServiceFeatures.map(f => <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.9rem', fontWeight: 600 }}><span style={{ color: 'var(--primary)' }}>✓</span>{f}</li>)}
+              <p style={{ fontSize: '1.1rem', marginBottom: '2rem', lineHeight: 1.6, color: '#555' }}>{h.selfServiceDesc}</p>
+              <ul style={{ listStyle: 'none', display: 'grid', gridTemplateColumns: '1fr', gap: '1rem', marginBottom: '2.5rem' }}>
+                {h.selfServiceFeatures.map(f => (
+                  <li key={f} style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', fontSize: '1rem', fontWeight: 600, color: 'var(--text-main)' }}>
+                    <div style={{ width: '24px', height: '24px', background: 'var(--secondary)', color: 'white', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.8rem', flexShrink: 0 }}>✓</div>
+                    {f}
+                  </li>
+                ))}
               </ul>
-              <a href="#pricing" className="btn btn-teal">{h.selfServiceCta}</a>
+              <a href="#pricing" className="btn btn-teal" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>{h.selfServiceCta}</a>
             </div>
           </div>
         </div>
