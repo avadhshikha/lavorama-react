@@ -157,7 +157,7 @@ export const translations = {
       privacy: 'Privacy Policy',
     },
     home: {
-      heroBadge: '🌟 Geneva\\'s Modern Laundromat',
+      heroBadge: "🌟 Geneva's Modern Laundromat",
       heroTitle: "Geneva's Best\nSelf-Service\nLaundromat",
       heroP1: "Modern laundromat in Geneva. Discover our brand new 30 kg washer at Dancet — a first in Geneva!",
       heroP2: "No coins, no stress — just clean clothes, open 7 days a week.",
