@@ -153,7 +153,7 @@ function PageFooter() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
               {[
                 { icon: '📍', text: 'Rue des Pâquis 43\n1201 Genève, Suisse' },
-                { icon: '📍', text: 'Rue Dancet 2\n1205 Genève, Suisse' },
+                { icon: '📍', text: 'Rue Dancet 2\n1205 Genève, Suisse (ouverture prochaine)' },
                 { icon: '📞', text: '+41 79 565 41 42' },
                 { icon: '✉️', text: 'booking@lavorama.ch' },
                 { icon: '🕐', text: f.hours },

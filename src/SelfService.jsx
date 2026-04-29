@@ -8,7 +8,7 @@ const faqs = [
   { q: 'Do I need coins for the machines at Lavorama Geneva?', a: 'No coins needed. All machines are operated and paid for via touchscreen. Simple and cashless.' },
   { q: 'Can I wash a duvet at Lavorama Geneva?', a: 'Absolutely. Our 20 kg industrial washers are designed for duvets, pillows, winter coats, and other bulky items that don\'t fit in a home machine.' },
   { q: 'Can I book a machine in advance at Lavorama Geneva?', a: 'Yes. You can book your machine slot online via our website or by contacting us on WhatsApp at +41 79 565 41 42.' },
-  { q: 'Where is the laundromat in Pâquis Geneva?', a: 'Lavorama is located at Rue des Pâquis 43, 1201 Genève — right in the Pâquis neighbourhood.' },
+  { q: 'Where are the laundromats in Geneva?', a: 'Lavorama is located at Rue des Pâquis 43 and Rue Dancet 2 (opening soon) — easily accessible from anywhere in Geneva.' },
 ];
 
 function SelfService() {
@@ -44,7 +44,7 @@ function SelfService() {
               <h1 style={{ fontFamily: 'Fredoka', fontSize: 'clamp(2rem, 5vw, 3.2rem)', color: 'var(--primary)', textTransform: 'uppercase', lineHeight: 1.1, marginBottom: '1.2rem' }}>
                 Self-Service Laundromat in Geneva — Open Every Day, 7 AM to 11 PM
               </h1>
-              <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>Lavorama is Geneva's most modern self-service laundromat, located at Rue des Pâquis 43. Industrial washers from 7–20 kg, detergent always included, no coins needed. Open every day of the year.</p>
+              <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>Lavorama offers Geneva's most modern self-service laundromats, located at Rue des Pâquis 43 and Rue Dancet 2 (opening soon). Industrial washers from 7–20 kg, detergent always included, no coins needed. Open every day of the year.</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="/contact" className="btn btn-orange">Book a Machine Online</a>
                 <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">💬 WhatsApp Us</a>
@@ -103,7 +103,7 @@ function SelfService() {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <h2 style={{ color: 'white' }}>Why Use Lavorama's Laundromat in Geneva</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', maxWidth: '750px', margin: '0 auto' }}>
-            {['Open 7 days a week including Sundays and public holidays','No coins — pay by touchscreen, clean and easy','Eco-certified professional detergent always included — no extra cost','Industrial machines clean better than any home washer','Book your slot online — no waiting around','Free Wi-Fi and comfortable lounge while you wait','Machines for 7 kg, 15 kg, and 20 kg — something for every need','Central location in Pâquis — easy to reach from anywhere in Geneva'].map(f => (
+            {['Open 7 days a week including Sundays and public holidays','No coins — pay by touchscreen, clean and easy','Eco-certified professional detergent always included — no extra cost','Industrial machines clean better than any home washer','Book your slot online — no waiting around','Free Wi-Fi and comfortable lounge while you wait','Machines for 7 kg, 15 kg, and 20 kg — something for every need','Central locations in Pâquis and Plainpalais — easy to reach from anywhere in Geneva'].map(f => (
               <div key={f} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', color: 'white' }}>
                 <span style={{ color: 'var(--secondary)', fontWeight: 700, flexShrink: 0 }}>✓</span>
                 <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>{f}</span>
@@ -139,9 +139,9 @@ function SelfService() {
       {/* ── 6. LOCATION ── */}
       <section className="section bg-light">
         <div className="container" style={{ textAlign: 'center' }}>
-          <h2>Lavorama Geneva — Location &amp; Hours</h2>
+          <h2>Lavorama Geneva — Locations &amp; Hours</h2>
           <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '2rem' }}>
-            {[{ icon: '📍', title: 'Address', val: 'Rue des Pâquis 43\n1201 Genève, Switzerland' },{ icon: '🕐', title: 'Hours', val: 'Mon–Sun: 7:00–23:00\nEvery day of the year' },{ icon: '📞', title: 'Phone / WhatsApp', val: '+41 79 565 41 42' }].map(item => (
+            {[{ icon: '📍', title: 'Locations', val: 'Pâquis: Rue des Pâquis 43\nPlainpalais: Rue Dancet 2 (opening soon)' },{ icon: '🕐', title: 'Hours', val: 'Mon–Sun: 7:00–23:00\nEvery day of the year' },{ icon: '📞', title: 'Phone / WhatsApp', val: '+41 79 565 41 42' }].map(item => (
               <div key={item.icon} style={{ background: 'white', borderRadius: '16px', padding: '1.5rem 2rem', boxShadow: '0 4px 15px rgba(108,191,191,0.1)', minWidth: '200px', textAlign: 'center' }}>
                 <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>{item.icon}</div>
                 <h4 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', marginBottom: '0.3rem' }}>{item.title}</h4>

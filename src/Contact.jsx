@@ -34,7 +34,7 @@ function Contact() {
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem', marginBottom: '4rem' }}>
             {[
-              { icon: '📍', title: 'Our Locations', detail: 'Rue des Pâquis 43, 1201 Genève\nRue Dancet 2, 1205 Genève', bg: 'var(--primary)' },
+              { icon: '📍', title: 'Our Locations', detail: 'Rue des Pâquis 43, 1201 Genève\nRue Dancet 2, 1205 Genève (opening soon)', bg: 'var(--primary)' },
               { icon: '📞', title: 'Phone & WhatsApp', detail: '+41 79 565 41 42', bg: 'var(--secondary)' },
               { icon: '✉️', title: 'Email Us', detail: 'booking@lavorama.ch\ninfo@lavorama.ch', bg: 'var(--primary)' },
               { icon: '🕐', title: 'Opening Hours', detail: 'Every day: 7:00–23:00', bg: 'var(--secondary)' },
@@ -88,7 +88,7 @@ function Contact() {
               </div>
               <div style={{ background: 'var(--secondary)', borderRadius: '16px', padding: '1.5rem', marginTop: '1rem', color: 'white' }}>
                 <h4 style={{ fontFamily: 'Fredoka', color: 'white', marginBottom: '0.5rem' }}>📍 Lavorama Dancet (New!)</h4>
-                <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: '0.25rem' }}>Rue Dancet 2, 1205 Genève, Switzerland</p>
+                <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: '0.25rem' }}>Rue Dancet 2, 1205 Genève, Switzerland (Opening soon)</p>
                 <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 600, marginBottom: 0 }}>✨ Exclusive 30 kg washing machine — a first in Geneva!</p>
               </div>
             </div>
@@ -138,7 +138,7 @@ function Contact() {
         <img src="/reset/imgi_2_ele2.png" alt="" style={{ position: 'absolute', top: '20%', right: '8%', width: '80px', opacity: 0.8 }} />
         <div className="container text-center" style={{ position: 'relative', zIndex: 1, padding: '2rem 0' }}>
           <h2 style={{ color: 'white', fontSize: '2.8rem', marginBottom: '1rem' }}>Ready for Cleaner Laundry in Geneva?</h2>
-          <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 400, maxWidth: '550px', margin: '0 auto 2rem' }}>Walk into Rue des Pâquis 43 or our new location at Rue Dancet 2 — open every day from 7 AM to 11 PM.</p>
+          <p style={{ color: 'rgba(255,255,255,0.9)', fontWeight: 400, maxWidth: '550px', margin: '0 auto 2rem' }}>Walk into Rue des Pâquis 43 or our new location at Rue Dancet 2 (opening soon) — open every day from 7 AM to 11 PM.</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
             <a href="tel:+41795654142" className="btn btn-white">📞 Call Us</a>
           </div>

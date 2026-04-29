@@ -13,7 +13,7 @@ export const translations = {
 
     // ── FOOTER ──
     footer: {
-      tagline: "La laverie moderne de Genève — libre-service. Rue des Pâquis 43, 1201 Genève.",
+      tagline: "La laverie moderne de Genève — libre-service.",
       services: 'Services',
       links: {
         selfService: 'Laverie Libre-service',
@@ -29,14 +29,14 @@ export const translations = {
       ],
       contact: 'Contact — Adresse',
       hours: 'Lun–Dim : 7h00 – 23h00',
-      copyright: '© 2025 Lavorama · Rue des Pâquis 43, 1201 Genève. Tous droits réservés.',
+      copyright: '© 2025 Lavorama. Tous droits réservés.',
       terms: 'Conditions générales',
       privacy: 'Politique de confidentialité',
     },
 
     // ── HOME ──
     home: {
-      heroBadge: '📍 2 Emplacements à Genève : Pâquis & Dancet',
+      heroBadge: '🌟 La laverie moderne de Genève',
       heroTitle: 'La Meilleure\nLaverie Libre-Service\nde Genève',
       heroP1: "Laverie moderne à Genève. Découvrez notre nouvelle machine de 30 kg à Dancet — une première à Genève !",
       heroP2: "Sans pièces, sans stress — juste du linge propre, ouvert 7j/7.",
@@ -46,8 +46,8 @@ export const translations = {
       servicesTitle: 'Deux façons de bien laver votre linge',
       servicesSubtitle: 'Venez faire votre lessive vous-même. Lavorama s\'adapte à votre emploi du temps.',
 
-      selfServiceTitle: 'Laverie Libre-service\nà Genève — Pâquis',
-      selfServiceDesc: "Venez dans notre laverie moderne rue des Pâquis 43, Genève. Les machines industrielles de 8 kg à 20 kg traitent tout — vêtements, couettes, oreillers — avec détergent éco-certifié inclus dans chaque lavage.",
+      selfServiceTitle: 'Laverie Libre-service\nà Genève',
+      selfServiceDesc: "Venez dans nos laveries modernes à Genève (Pâquis et Plainpalais). Les machines industrielles de 8 kg à 20 kg traitent tout — vêtements, couettes, oreillers — avec détergent éco-certifié inclus dans chaque lavage.",
       selfServiceFeatures: [
         'Machines industrielles de 8 kg à 20 kg',
         'Détergent éco-certifié toujours inclus',
@@ -75,8 +75,8 @@ export const translations = {
       faqTitle: 'Foire aux questions — Lavorama Genève',
       faqs: [
         { q: 'Combien coûte une laverie automatique à Genève ?', a: 'Chez Lavorama, les prix commencent à CHF 6 pour un lavage de 7 kg, CHF 12 pour 15 kg, et CHF 16 pour 20 kg. Le détergent est toujours inclus.' },
-        { q: 'Y a-t-il une laverie ouverte le dimanche à Genève ?', a: "Oui — Lavorama à Rue des Pâquis 43 est ouvert tous les jours y compris le dimanche, de 7h à 23h." },
-        { q: 'Où se trouve la laverie la plus proche à Genève ?', a: 'Lavorama est idéalement situé au Rue des Pâquis 43, 1201 Genève — facilement accessible depuis Pâquis, Eaux-Vives, Cornavin et le centre-ville.' },
+        { q: 'Y a-t-il une laverie ouverte le dimanche à Genève ?', a: "Oui — Lavorama est ouvert tous les jours y compris le dimanche, de 7h à 23h." },
+        { q: 'Où se trouvent vos laveries à Genève ?', a: 'Nous avons deux emplacements : Pâquis (Rue des Pâquis 43) et Plainpalais (Rue Dancet 2, ouverture prochaine).' },
       ],
 
       whyLabel: 'Pourquoi Genève choisit Lavorama',
@@ -93,7 +93,7 @@ export const translations = {
         { title: 'Accessible à tous', desc: 'À partir de CHF 6 par lavage — tarification claire, rien de caché.' },
         { title: 'Vêtements qui durent plus longtemps', desc: 'Contrôle précis de la température et de l\'essorage pour garder vos vêtements en meilleur état.' },
         { title: 'Machines économes en énergie', desc: 'Machines modernes basse consommation — laver efficacement tout en étant responsable.' },
-        { title: 'Emplacement central à Genève', desc: 'Juste au Rue des Pâquis 43 — accessible à pied, en tram ou à vélo depuis tout Genève.' },
+        { title: 'Emplacements centraux à Genève', desc: 'Facilement accessibles à pied, en tram ou à vélo depuis tout Genève, avec des laveries à Pâquis et Plainpalais.' },
         { title: 'Options de traitement spécial', desc: 'Délicats, vêtements de sport, couettes — nous avons le bon programme pour chaque type de linge.' },
       ],
 
@@ -111,7 +111,7 @@ export const translations = {
       contactDesc: 'Venez à tout moment. Nous servons toute Genève : Pâquis, Cornavin, Eaux-Vives, Plainpalais, Carouge, Champel et le centre-ville.',
       contactInfo: [
         { icon: '📍', label: 'Lavorama Pâquis', val: 'Rue des Pâquis 43, 1201 Genève' },
-        { icon: '📍', label: 'Lavorama Dancet', val: 'Rue Dancet 2, 1205 Genève' },
+        { icon: '📍', label: 'Lavorama Plainpalais', val: 'Rue Dancet 2, 1205 Genève (ouverture prochaine)' },
         { icon: '💬', label: 'Tél. / WhatsApp', val: '+41 79 565 41 42' },
         { icon: '🕐', label: 'Ouvert tous les jours', val: '7h00 – 23h00' },
       ],
@@ -136,7 +136,7 @@ export const translations = {
       contact: 'Contact',
     },
     footer: {
-      tagline: "Geneva's modern self-service laundromat. Rue des Pâquis 43, 1201 Genève.",
+      tagline: "Geneva's modern self-service laundromat.",
       services: 'Services',
       links: {
         selfService: 'Self-Service Laundromat',
@@ -152,12 +152,12 @@ export const translations = {
       ],
       contact: 'Contact — NAP',
       hours: 'Mon–Sun: 7:00 – 23:00',
-      copyright: '© 2025 Lavorama · Rue des Pâquis 43, 1201 Genève. All rights reserved.',
+      copyright: '© 2025 Lavorama. All rights reserved.',
       terms: 'Terms & Conditions',
       privacy: 'Privacy Policy',
     },
     home: {
-      heroBadge: '📍 2 Locations in Geneva: Pâquis & Dancet',
+      heroBadge: '🌟 Geneva\\'s Modern Laundromat',
       heroTitle: "Geneva's Best\nSelf-Service\nLaundromat",
       heroP1: "Modern laundromat in Geneva. Discover our brand new 30 kg washer at Dancet — a first in Geneva!",
       heroP2: "No coins, no stress — just clean clothes, open 7 days a week.",
@@ -165,8 +165,8 @@ export const translations = {
       servicesLabel: 'Laundry Services in Geneva',
       servicesTitle: 'Two Ways to Get Laundry Done Right',
       servicesSubtitle: "Walk in and do it yourself. Lavorama fits your schedule.",
-      selfServiceTitle: 'Self-Service Laundromat\nin Geneva — Pâquis',
-      selfServiceDesc: "Walk into our modern laundromat at Rue des Pâquis 43, Geneva. Industrial washers from 8 kg to 20 kg handle everything — clothes, duvets, pillows — with eco-certified detergent included in every wash.",
+      selfServiceTitle: 'Self-Service Laundromat\nin Geneva',
+      selfServiceDesc: "Walk into our modern laundromats in Geneva (Pâquis and Plainpalais). Industrial washers from 8 kg to 20 kg handle everything — clothes, duvets, pillows — with eco-certified detergent included in every wash.",
       selfServiceFeatures: ['Industrial washers from 8 kg to 20 kg', 'Eco-certified detergent always included', 'Touchscreen-guided — no experience needed', 'Book your slot online to avoid waiting', 'Free Wi-Fi & comfortable lounge area', 'Open 7 days a week, 7 AM to 11 PM'],
       selfServiceCta: 'Book a Machine at Lavorama Geneva',
 
@@ -184,8 +184,8 @@ export const translations = {
       faqTitle: 'Frequently Asked Questions — Lavorama Geneva',
       faqs: [
         { q: 'How much does a laundromat cost in Geneva?', a: 'At Lavorama, prices start from CHF 6 for a 7 kg wash, CHF 12 for 15 kg, and CHF 16 for 20 kg. Detergent is always included.' },
-        { q: 'Is there a laundromat open on Sunday in Geneva?', a: 'Yes — Lavorama at Rue des Pâquis 43 is open every day including Sunday, from 7 AM to 11 PM.' },
-        { q: 'Where is the nearest laundromat in Geneva?', a: 'Lavorama is centrally located at Rue des Pâquis 43, 1201 Genève — easily accessible from Pâquis, Eaux-Vives, Cornavin, and the city centre.' },
+        { q: 'Is there a laundromat open on Sunday in Geneva?', a: 'Yes — Lavorama is open every day including Sunday, from 7 AM to 11 PM.' },
+        { q: 'Where are your laundromats located in Geneva?', a: 'We have two locations: Pâquis (Rue des Pâquis 43) and Plainpalais (Rue Dancet 2, opening soon).' },
       ],
       whyLabel: 'Why Geneva Chooses Lavorama',
       whyTitle: 'Built for People Who Value Their Time',
@@ -201,7 +201,7 @@ export const translations = {
         { title: 'Affordable for everyone', desc: 'Starting from CHF 6 per wash — clear pricing with nothing hidden.' },
         { title: 'Longer-lasting clothes', desc: 'Precise temperature and spin control means your garments stay in better shape, longer.' },
         { title: 'Energy-efficient machines', desc: 'Modern low-consumption machines — our way of doing great laundry responsibly.' },
-        { title: 'Central Geneva location', desc: 'Right at Rue des Pâquis 43 — easy to reach by foot, tram, or bike from anywhere.' },
+        { title: 'Central Geneva locations', desc: 'Easily accessible by foot, tram, or bike from anywhere, with laundromats in Pâquis and Plainpalais.' },
         { title: 'Special treatment options', desc: 'Delicates, sportswear, duvets — we have the right cycle for every type of laundry.' },
       ],
       testimonialsLabel: 'Lavorama Geneva Reviews',
@@ -217,7 +217,7 @@ export const translations = {
       contactDesc: 'Come in anytime. We serve customers from across Geneva including Pâquis, Cornavin, Eaux-Vives, Plainpalais, Carouge, Champel, and the city centre.',
       contactInfo: [
         { icon: '📍', label: 'Lavorama Pâquis', val: 'Rue des Pâquis 43, 1201 Genève' },
-        { icon: '📍', label: 'Lavorama Dancet', val: 'Rue Dancet 2, 1205 Genève' },
+        { icon: '📍', label: 'Lavorama Plainpalais', val: 'Rue Dancet 2, 1205 Genève (opening soon)' },
         { icon: '💬', label: 'Phone / WhatsApp', val: '+41 79 565 41 42' },
         { icon: '🕐', label: 'Open Every Day', val: '7:00 – 23:00' },
       ],
