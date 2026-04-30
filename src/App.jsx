@@ -32,8 +32,13 @@ function App() {
         <div className="container hero-grid">
           <div className="text-wrapper" style={{ paddingBottom: '5rem', position: 'relative' }}>
             <img src="/reset/imgi_42_ele10-284x300.png" className="dots-pattern" alt="" style={{ width: '100px' }} />
-            <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.9rem', fontFamily: 'Fredoka', marginBottom: '1.2rem' }}>
-              {h.heroBadge}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', alignItems: 'flex-start', marginBottom: '1.2rem' }}>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.9rem', fontFamily: 'Fredoka' }}>
+                {h.heroBadge1}
+              </div>
+              <div style={{ display: 'inline-block', background: 'var(--secondary)', color: 'white', borderRadius: '50px', padding: '0.35rem 1.2rem', fontSize: '0.9rem', fontFamily: 'Fredoka' }}>
+                {h.heroBadge2}
+              </div>
             </div>
             <h1>{h.heroTitle.split('\n').map((line, i) => <React.Fragment key={i}>{line}{i < 2 && <br />}</React.Fragment>)}</h1>
             <p style={{ maxWidth: '440px' }}>{h.heroP1}</p>

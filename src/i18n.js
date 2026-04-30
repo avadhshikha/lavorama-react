@@ -36,7 +36,8 @@ export const translations = {
 
     // ── HOME ──
     home: {
-      heroBadge: '🌟 La laverie moderne de Genève',
+      heroBadge1: '📍 Rue des Pâquis 43, 1201 Genève',
+      heroBadge2: '📍 Rue Dancet 2, 1205 Genève (Bientôt disponible)',
       heroTitle: 'La Meilleure\nLaverie Libre-Service\nde Genève',
       heroP1: "Laverie moderne à Genève. Découvrez notre nouvelle machine de 30 kg à Dancet (ouverture prochaine) — une première à Genève !",
       heroP2: "Sans pièces, sans stress — juste du linge propre, ouvert 7j/7.",
@@ -157,7 +158,8 @@ export const translations = {
       privacy: 'Privacy Policy',
     },
     home: {
-      heroBadge: "🌟 Geneva's Modern Laundromat",
+      heroBadge1: '📍 Rue des Pâquis 43, 1201 Genève',
+      heroBadge2: '📍 Rue Dancet 2, 1205 Genève (Coming Soon)',
       heroTitle: "Geneva's Best\nSelf-Service\nLaundromat",
       heroP1: "Modern laundromat in Geneva. Discover our brand new 30 kg washer at Dancet (opening soon) — a first in Geneva!",
       heroP2: "No coins, no stress — just clean clothes, open 7 days a week.",
