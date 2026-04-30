@@ -38,7 +38,7 @@ export const translations = {
     home: {
       heroBadge: '🌟 La laverie moderne de Genève',
       heroTitle: 'La Meilleure\nLaverie Libre-Service\nde Genève',
-      heroP1: "Laverie moderne à Genève. Découvrez notre nouvelle machine de 30 kg à Dancet — une première à Genève ! (Bientôt disponible)",
+      heroP1: "Laverie moderne à Genève. Découvrez notre nouvelle machine de 30 kg à Dancet (ouverture prochaine) — une première à Genève !",
       heroP2: "Sans pièces, sans stress — juste du linge propre, ouvert 7j/7.",
       heroCta1: 'Voir les tarifs',
 
@@ -159,7 +159,7 @@ export const translations = {
     home: {
       heroBadge: "🌟 Geneva's Modern Laundromat",
       heroTitle: "Geneva's Best\nSelf-Service\nLaundromat",
-      heroP1: "Modern laundromat in Geneva. Discover our brand new 30 kg washer at Dancet — a first in Geneva! (Coming Soon)",
+      heroP1: "Modern laundromat in Geneva. Discover our brand new 30 kg washer at Dancet (opening soon) — a first in Geneva!",
       heroP2: "No coins, no stress — just clean clothes, open 7 days a week.",
       heroCta1: 'See Pricing',
       servicesLabel: 'Laundry Services in Geneva',
