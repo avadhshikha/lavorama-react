@@ -9,6 +9,9 @@ import Faq from './Faq.jsx';
 import { Navbar, PageFooter } from './components.jsx';
 import { useLang } from './LangContext.jsx';
 
+const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?hl=fr&q=Lavorama+Gen%C3%A8ve&ludocid=13242875098853718847#lrd=0x478c65d2701fd2c9:0xb7c824bd180abb3f,1,,,,';
+const GOOGLE_MAPS_URL = 'https://www.google.com/maps?cid=13242875098853718847';
+
 function App() {
   const { t } = useLang();
   const h = t.home;
@@ -133,24 +136,71 @@ function App() {
         </div>
       </section>
 
-      {/* ── 5. TESTIMONIALS ── */}
+      {/* ── 5. GOOGLE REVIEWS ── */}
       <section className="section bg-light">
         <div className="container">
-          <p style={{ textAlign: 'center', color: 'var(--secondary)', fontFamily: 'Fredoka', fontSize: '1rem', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>{h.testimonialsLabel}</p>
-          <h2>{h.testimonialsTitle}</h2>
-          <p style={{ textAlign: 'center', maxWidth: '540px', margin: '-1.5rem auto 3rem' }}>{h.testimonialsSubtitle}</p>
-          <div className="testimonial-grid">
-            {h.testimonials.map((t, i) => (
-              <div className="testimonial-card" key={i}>
-                <div className="stars">★★★★★</div>
-                <div className="testi-user">
-                  <img src={`/reset/${t.img}`} alt={t.name} />
-                  <h4>{t.name}</h4>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--primary)' }}>{t.location}</span>
-                </div>
-                <p style={{ fontSize: '0.9rem', marginTop: '1rem', fontWeight: 500 }}>"{t.review}"</p>
+          <p className="section-eyebrow">{h.googleReviewsLabel}</p>
+          <h2>{h.googleReviewsTitle}</h2>
+          <p className="section-intro">{h.googleReviewsSubtitle}</p>
+
+          <div className="google-reviews-panel">
+            <div className="google-rating-summary">
+              <div className="google-brand" aria-label="Google">
+                <span className="google-g" aria-hidden="true">G</span>
+                <span>Google</span>
               </div>
-            ))}
+              <div className="google-rating-row">
+                <strong>{h.googleRating}</strong>
+                <span className="rating-stars" aria-label={h.googleRatingAria}>
+                  <span aria-hidden="true">★★★★★</span>
+                  <span className="rating-stars-fill" aria-hidden="true">★★★★★</span>
+                </span>
+              </div>
+              <p className="google-review-count">{h.googleReviewCount}</p>
+              <p className="google-review-note">{h.googleReviewNote}</p>
+              <div className="google-review-actions">
+                <a
+                  href={GOOGLE_REVIEWS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-teal"
+                >
+                  {h.googleReviewsCta}
+                </a>
+                <a
+                  href={GOOGLE_MAPS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="google-maps-link"
+                >
+                  {h.googleMapsCta} <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+
+            <article className="google-review-card">
+              <div className="google-review-source">
+                <span className="google-g google-g-small" aria-hidden="true">G</span>
+                <span>{h.googleReviewSource}</span>
+              </div>
+              <div className="google-review-author">
+                <span className="reviewer-initial" aria-hidden="true">W</span>
+                <div>
+                  <h3>Will Kueh</h3>
+                  <span>{h.googleReviewerType}</span>
+                </div>
+              </div>
+              <div className="review-stars" aria-label={h.fiveStarRating}>★★★★★</div>
+              <blockquote>“{h.googleReviewExcerpt}”</blockquote>
+              <a
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="google-review-source-link"
+              >
+                {h.googleReviewSourceLink} <span aria-hidden="true">↗</span>
+              </a>
+            </article>
           </div>
         </div>
       </section>
