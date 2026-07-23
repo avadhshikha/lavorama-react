@@ -118,7 +118,6 @@ export const translations = {
       googleReviewShow: 'Afficher l’avis',
       googleReviewPause: 'Mettre le défilement automatique en pause',
       googleReviewPlay: 'Reprendre le défilement automatique',
-      googleReviewAutoNote: 'changement toutes les 20 secondes',
 
       contactLabel: 'Retrouvez-nous à Genève',
       contactTitle: 'Visitez Lavorama — 2 Emplacements à Genève',
@@ -239,7 +238,6 @@ export const translations = {
       googleReviewShow: 'Show review',
       googleReviewPause: 'Pause automatic review rotation',
       googleReviewPlay: 'Resume automatic review rotation',
-      googleReviewAutoNote: 'changes every 20 seconds',
       contactLabel: 'Find Us in Geneva',
       contactTitle: "Visit Lavorama — Now in 2 Geneva Locations",
       contactDesc: 'Come in anytime. We serve customers from across Geneva including Pâquis, Cornavin, Eaux-Vives, Plainpalais, Carouge, Champel, and the city centre.',

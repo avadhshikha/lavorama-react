@@ -278,9 +278,6 @@ function App() {
                     <span aria-hidden="true">{reviewsPaused ? '▶' : 'Ⅱ'}</span>
                   </button>
                 </div>
-                <span className="review-slider-status">
-                  {activeReviewIndex + 1}/{GOOGLE_REVIEWS.length} · {h.googleReviewAutoNote}
-                </span>
               </div>
             </div>
           </div>

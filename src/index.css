@@ -476,12 +476,6 @@ header {
   outline: 2px solid var(--secondary);
   outline-offset: 3px;
 }
-.review-slider-status {
-  color: #7a898c;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-align: right;
-}
 @keyframes review-fade-in {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
@@ -701,7 +695,6 @@ footer { padding: 4rem 0 2rem; }
     align-items: flex-start;
     flex-direction: column;
   }
-  .review-slider-status { text-align: left; }
 
   /* Pickup steps: single col */
   .steps-grid { grid-template-columns: 1fr !important; }
