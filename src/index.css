@@ -343,15 +343,6 @@ header {
   flex-wrap: wrap;
   gap: 1rem 1.25rem;
 }
-.google-maps-link,
-.google-review-source-link {
-  color: var(--primary);
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-}
-.google-maps-link:hover,
-.google-review-source-link:hover { color: var(--secondary); }
 .google-review-slider {
   display: flex;
   min-width: 0;
