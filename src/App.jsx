@@ -10,7 +10,6 @@ import { Navbar, PageFooter } from './components.jsx';
 import { useLang } from './LangContext.jsx';
 
 const GOOGLE_REVIEWS_URL = 'https://www.google.com/search?hl=fr&q=Lavorama+Gen%C3%A8ve&ludocid=13242875098853718847#lrd=0x478c65d2701fd2c9:0xb7c824bd180abb3f,1,,,,';
-const GOOGLE_MAPS_URL = 'https://www.google.com/maps?cid=13242875098853718847';
 const GOOGLE_REVIEWS = [
   {
     name: 'Will Kueh',
@@ -208,14 +207,6 @@ function App() {
                 >
                   {h.googleReviewsCta}
                 </a>
-                <a
-                  href={GOOGLE_MAPS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="google-maps-link"
-                >
-                  {h.googleMapsCta} <span aria-hidden="true">↗</span>
-                </a>
               </div>
             </div>
 
@@ -242,14 +233,6 @@ function App() {
                 </div>
                 <div className="review-stars" aria-label={h.fiveStarRating}>★★★★★</div>
                 <blockquote>“{activeReview.excerpt}”</blockquote>
-                <a
-                  href={GOOGLE_REVIEWS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="google-review-source-link"
-                >
-                  {h.googleReviewSourceLink} <span aria-hidden="true">↗</span>
-                </a>
               </article>
 
               <div className="review-slider-footer">
