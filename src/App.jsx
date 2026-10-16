@@ -125,7 +125,7 @@ function App() {
                   </li>
                 ))}
               </ul>
-              <a href="#pricing" className="btn btn-teal" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>{h.selfServiceCta}</a>
+              <a href="/contact" className="btn btn-teal" style={{ padding: '1rem 2rem', fontSize: '1.1rem' }}>{h.selfServiceCta}</a>
             </div>
           </div>
         </div>
@@ -148,7 +148,6 @@ function App() {
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
                   {plan.features.map(f => <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.82rem', fontWeight: 600 }}><span style={{ color: 'var(--primary)' }}>✓</span>{f}</li>)}
                 </ul>
-                <a href="/contact" className={`btn ${plan.popular ? 'btn-teal' : 'btn-secondary'}`} style={{ width: '100%', display: 'block', textAlign: 'center', fontSize: '0.9rem' }}>{h.bookNow}</a>
               </div>
             ))}
           </div>

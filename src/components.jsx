@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLang, LangSwitcher } from './LangContext.jsx';
 
 function Navbar({ active }) {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
@@ -14,6 +14,23 @@ function Navbar({ active }) {
   ];
 
   return (
+    <>
+    <div className="walk-in-banner" role="status" aria-label={lang === 'fr' ? 'Accès sans réservation' : 'Walk-ins welcome'}>
+      <div className="walk-in-banner-track" aria-hidden="true">
+        {Array.from({ length: 4 }, (_, index) => (
+          <span key={index} className="walk-in-banner-message">
+            {lang === 'fr'
+              ? 'Sans réservation : venez pendant les heures d’ouverture et utilisez toute machine disponible.'
+              : 'No booking required: simply come during opening hours and use any available machine.'}
+          </span>
+        ))}
+      </div>
+      <span className="visually-hidden">
+        {lang === 'fr'
+          ? 'Sans réservation : venez pendant les heures d’ouverture et utilisez toute machine disponible.'
+          : 'No booking required: simply come during opening hours and use any available machine.'}
+      </span>
+    </div>
     <header>
       <div className="container">
         <nav className="nav-inner">
@@ -75,6 +92,7 @@ function Navbar({ active }) {
         </div>
       </div>
     </header>
+    </>
   );
 }
 
@@ -155,7 +173,7 @@ function PageFooter() {
                 { icon: '📍', text: 'Rue des Pâquis 43\n1201 Genève, Suisse' },
                 { icon: '📍', text: lang === 'fr' ? 'Rue Dancet 2\n1205 Genève, Suisse — Maintenant ouvert' : 'Rue Dancet 2\n1205 Geneva, Switzerland — Now open' },
                 { icon: '📞', text: '+41 79 565 41 42' },
-                { icon: '✉️', text: 'booking@lavorama.ch' },
+                { icon: '✉️', text: 'info@lavorama.ch' },
                 { icon: '🕐', text: f.hours },
               ].map(item => (
                 <li key={item.icon + item.text} style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start' }}>

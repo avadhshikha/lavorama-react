@@ -12,7 +12,6 @@ function Pricing() {
       heroTitle: "Tarifs Blanchisserie & Laverie à Genève",
       heroDesc: "Chez Lavorama Genève, nous croyons à la transparence totale des prix. Ce que vous voyez est ce que vous payez — sans supplément, sans frais cachés. Le détergent professionnel éco-certifié est inclus dans chaque lavage.",
       seePrices: "Voir les tarifs",
-      bookNow: "Réserver",
       sectionTitle: "Prix des Machines à Laver en Libre-Service — Genève",
       sectionSubtitle: "Clair, abordable, sans frais cachés. Détergent toujours inclus — pas de pièces nécessaires.",
       mostPopular: "Le plus populaire",
@@ -34,7 +33,6 @@ function Pricing() {
       ],
       valueTitle: "Lavorama est-elle la laverie la plus économique de Genève ?",
       valueDesc: "Avec des lavages à partir de CHF 6 seulement — détergent inclus — Lavorama offre un rapport qualité-prix imbattable à Genève. Avec nos machines industrielles de 7 kg à 30 kg, vous obtenez des résultats qu'aucune machine domestique ne peut égaler.",
-      bookMachineBtn: "Réserver une machine maintenant",
       faqsTitle: "Tarifs Laverie Genève — Foire aux questions",
       faqs: [
         { q: 'Combien coûte une laverie automatique à Genève ?', a: 'Chez Lavorama, les prix débutent à CHF 6 pour un lavage de 7 kg, CHF 12 pour 15 kg, CHF 16 pour 20 kg, et CHF 22 pour notre machine 30 kg à Plainpalais. Le détergent est toujours inclus.' },
@@ -47,7 +45,6 @@ function Pricing() {
       heroTitle: "Laundry Prices in Geneva",
       heroDesc: "At Lavorama Geneva, we believe in total pricing transparency. What you see is what you pay — no surcharges, no surprise fees. Professional eco-certified detergent is included in every single wash.",
       seePrices: "See Prices",
-      bookNow: "Book Now",
       sectionTitle: "Self-Service Washing Machine Prices — Geneva",
       sectionSubtitle: "Clear, affordable, no hidden fees. Detergent is always included — no coins needed.",
       mostPopular: "Most Popular",
@@ -69,7 +66,6 @@ function Pricing() {
       ],
       valueTitle: "Is Lavorama the Most Affordable Laundromat in Geneva?",
       valueDesc: "With washes starting at just CHF 6 — detergent included — Lavorama offers outstanding value for Geneva. With our industrial machines from 7 kg to 30 kg at Plainpalais, you get results no home washer can match.",
-      bookMachineBtn: "Book a Machine Now",
       faqsTitle: "Laundry Prices Geneva — FAQ",
       faqs: [
         { q: 'How much does it cost to use a laundromat in Geneva?', a: 'At Lavorama, prices start from CHF 6 for a 7 kg wash, CHF 12 for 15 kg, CHF 16 for 20 kg, and CHF 22 for our 30 kg machine at Plainpalais. Detergent is always included.' },
@@ -98,7 +94,6 @@ function Pricing() {
               <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>{c.heroDesc}</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
                 <a href="#pricing-table" className="btn btn-orange">{c.seePrices}</a>
-                <a href="/contact" className="btn btn-teal">{c.bookNow}</a>
               </div>
             </div>
             <div className="hero-img">
@@ -124,7 +119,6 @@ function Pricing() {
                 <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
                   {plan.features.map(f => <li key={f} style={{ display: 'flex', gap: '0.5rem', fontSize: '0.82rem', fontWeight: 600 }}><span style={{ color: 'var(--primary)' }}>✓</span>{f}</li>)}
                 </ul>
-                <a href="/contact" className={`btn ${plan.popular ? 'btn-teal' : ''}`} style={{ width: '100%', display: 'block', textAlign: 'center', fontSize: '0.9rem', background: plan.popular ? '' : 'var(--primary)', color: 'white', borderRadius: '50px', padding: '0.7rem', textDecoration: 'none' }}>{c.bookNow}</a>
               </div>
             ))}
           </div>
@@ -154,9 +148,6 @@ function Pricing() {
         <div className="container" style={{ maxWidth: '700px', textAlign: 'center' }}>
           <h2>{c.valueTitle}</h2>
           <p>{c.valueDesc}</p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
-            <a href="/contact" className="btn btn-orange">{c.bookMachineBtn}</a>
-          </div>
         </div>
       </section>
 

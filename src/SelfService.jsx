@@ -11,7 +11,6 @@ function SelfService() {
       badge: "Laverie libre-service Genève",
       heroTitle: "Laverie Libre-Service à Genève — Ouvert 7j/7, 7h à 23h",
       heroDesc: "Deux laveries Lavorama ouvertes à Genève : Rue des Pâquis 43 et Rue Dancet 2 (Plainpalais). Machines industrielles de 7 kg à 20 kg et notre machine grande capacité de 30 kg disponible à Plainpalais, détergent éco-certifié toujours inclus, sans pièces de monnaie. Ouvert tous les jours de l'année.",
-      bookOnline: "Réserver en ligne",
       whatsAppUs: "💬 WhatsApp",
       machinesTitle: "Nos Machines à Laver en Libre-Service à Genève",
       machines: [
@@ -23,7 +22,7 @@ function SelfService() {
       ],
       howItWorksTitle: "Comment ça marche — Étape par étape",
       steps: [
-        { icon: '🧺', title: 'Choisissez votre machine', desc: 'Sélectionnez la taille adaptée à votre linge : 7 kg, 15 kg, 20 kg ou 30 kg à Plainpalais. Venez sans rendez-vous ou réservez en ligne.' },
+        { icon: '🧺', title: 'Choisissez votre machine', desc: 'Sélectionnez la taille adaptée à votre linge : 7 kg, 15 kg, 20 kg ou 30 kg à Plainpalais. Venez pendant les heures d’ouverture et utilisez toute machine disponible.' },
         { icon: '👕', title: 'Chargez votre linge', desc: 'Déposez vos vêtements dans le tambour. Pas besoin d\'apporter de détergent : il est automatiquement dosé à chaque cycle.' },
         { icon: '📱', title: 'Sélectionnez votre programme', desc: 'Choisissez votre programme sur l\'écran tactile : coton, délicat, synthétique, etc. Paiement tactile simple et rapide.' },
         { icon: '☕', title: 'Détendez-vous', desc: 'Profitez du Wi-Fi gratuit et de l\'espace lounge confortable pendant que la machine effectue son cycle complet.' },
@@ -76,7 +75,6 @@ function SelfService() {
       badge: "Self-service laundromat Geneva",
       heroTitle: "Self-Service Laundromat in Geneva — Open Every Day, 7 AM to 11 PM",
       heroDesc: "Two Lavorama laundromats now open in Geneva: Rue des Pâquis 43 and Rue Dancet 2 (Plainpalais). Industrial washers from 7–20 kg and our large-capacity 30 kg machine at Plainpalais, detergent always included, no coins needed. Open every day of the year from 7 AM to 11 PM.",
-      bookOnline: "Book a Machine Online",
       whatsAppUs: "💬 WhatsApp Us",
       machinesTitle: "Our Self-Service Washing Machines in Geneva",
       machines: [
@@ -88,7 +86,7 @@ function SelfService() {
       ],
       howItWorksTitle: "How It Works — Step by Step",
       steps: [
-        { icon: '🧺', title: 'Choose Your Machine', desc: 'Select the machine size that fits your load — 7 kg, 15 kg, 20 kg, or 30 kg at Plainpalais. Book your slot online in advance or simply walk in.' },
+        { icon: '🧺', title: 'Choose Your Machine', desc: 'Choose the size that fits your load — 7 kg, 15 kg, 20 kg, or 30 kg at Plainpalais. Come during opening hours and use any available machine.' },
         { icon: '👕', title: 'Load Your Laundry', desc: 'Place your clothes in the drum. No need to bring detergent — it\'s automatically dispensed at the perfect dose.' },
         { icon: '📱', title: 'Select Program on the Touchscreen', desc: 'Pick the right wash program — cotton, delicates, sportswear, quick wash, and more. Pay directly on screen.' },
         { icon: '☕', title: 'Relax While We Do the Work', desc: 'Grab the free Wi-Fi, use the lounge, or step out — your machine handles everything. Return when the cycle is done.' },
@@ -159,7 +157,6 @@ function SelfService() {
               </h1>
               <p style={{ maxWidth: '480px', marginBottom: '2rem', fontSize: '1.05rem' }}>{c.heroDesc}</p>
               <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <a href="/contact" className="btn btn-orange">{c.bookOnline}</a>
                 <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal">{c.whatsAppUs}</a>
               </div>
             </div>

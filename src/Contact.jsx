@@ -9,7 +9,7 @@ function Contact() {
     fr: {
       badge: "Contactez-nous",
       title: "Contactez Lavorama",
-      subtitle: "Réservez une machine ou posez-nous vos questions. Nous sommes ouverts à Pâquis et à Plainpalais, 7 jours sur 7.",
+      subtitle: "Venez quand vous le souhaitez pendant nos heures d’ouverture : Pâquis et Plainpalais sont ouverts 7 jours sur 7.",
       callBtn: "📞 Appelez-nous",
       whatsAppBtn: "💬 WhatsApp",
       cardLocationsTitle: "Nos 2 Laveries",
@@ -18,9 +18,6 @@ function Contact() {
       cardEmailTitle: "E-mail",
       cardHoursTitle: "Horaires d'ouverture",
       cardHoursDetail: "Tous les jours : 7h00 – 23h00",
-      bookTitle: "Réserver une machine à Genève",
-      bookDesc: "Pour réserver une machine ou poser une question, écrivez-nous directement sur WhatsApp. Nous répondons généralement en quelques minutes !",
-      bookBtn: "Écrivez-nous sur WhatsApp",
       hoursHeading: "Horaires d'ouverture",
       selfServiceRow: "Libre-service (Lun – Dim)",
       hoursVal: "7h00 – 23h00",
@@ -37,7 +34,7 @@ function Contact() {
     en: {
       badge: "Get in touch",
       title: "Contact Us",
-      subtitle: "Book a machine, or just ask a question. We are open in Pâquis and Plainpalais, seven days a week.",
+      subtitle: "Drop in whenever it suits you during opening hours. Our Pâquis and Plainpalais locations are open seven days a week.",
       callBtn: "📞 Call Us Now",
       whatsAppBtn: "💬 WhatsApp",
       cardLocationsTitle: "Our Locations",
@@ -46,9 +43,6 @@ function Contact() {
       cardEmailTitle: "Email Us",
       cardHoursTitle: "Opening Hours",
       cardHoursDetail: "Every day: 7:00–23:00",
-      bookTitle: "Book a Machine in Geneva",
-      bookDesc: "To book a machine or ask a question, please message us directly on WhatsApp. We typically reply within minutes!",
-      bookBtn: "Message us on WhatsApp",
       hoursHeading: "Opening Hours",
       selfServiceRow: "Self-Service (Mon – Sun)",
       hoursVal: "7:00 – 23:00",
@@ -100,7 +94,7 @@ function Contact() {
             {[
               { icon: '📍', title: c.cardLocationsTitle, detail: c.cardLocationsDetail, bg: 'var(--primary)' },
               { icon: '📞', title: c.cardPhoneTitle, detail: '+41 79 565 41 42', bg: 'var(--secondary)' },
-              { icon: '✉️', title: c.cardEmailTitle, detail: 'booking@lavorama.ch\ninfo@lavorama.ch', bg: 'var(--primary)' },
+              { icon: '✉️', title: c.cardEmailTitle, detail: 'info@lavorama.ch', bg: 'var(--primary)' },
               { icon: '🕐', title: c.cardHoursTitle, detail: c.cardHoursDetail, bg: 'var(--secondary)' },
             ].map((card, i) => (
               <div key={i} style={{ background: card.bg, borderRadius: '20px', padding: '2rem', textAlign: 'center', boxShadow: '0 8px 25px rgba(0,0,0,0.1)', transition: 'transform 0.3s', cursor: 'default' }}
@@ -113,20 +107,6 @@ function Contact() {
             ))}
           </div>
 
-          {/* Booking CTA + Image */}
-          <div style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 300px', minWidth: '280px' }}>
-              <h2 style={{ fontFamily: 'Fredoka', color: 'var(--primary)', textAlign: 'left', fontSize: '2.2rem', marginBottom: '0.5rem' }}>{c.bookTitle}</h2>
-              <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>{c.bookDesc}</p>
-              <a href="https://wa.me/41795654142" target="_blank" rel="noopener noreferrer" className="btn btn-teal" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', fontSize: '1.2rem', padding: '1rem 2rem' }}>
-                <span style={{ fontSize: '1.5rem' }}>💬</span> {c.bookBtn}
-              </a>
-            </div>
-            <div style={{ flex: '0 1 300px', minWidth: '240px', position: 'relative' }}>
-              <img src="/reset/imgi_41_s2-300x291.png" alt="" aria-hidden="true" style={{ position: 'absolute', top: '-20px', right: '-20px', width: '250px', opacity: 0.3, zIndex: 0 }} />
-              <img src="/reset/lavorama-geneva-booking-desk-notes-lifestyle.jpeg" alt="Book laundry machine Geneva" width="300" height="225" loading="lazy" style={{ maxWidth: '90%', height: 'auto', position: 'relative', zIndex: 1, borderRadius: '12px' }} />
-            </div>
-          </div>
         </div>
       </section>
 
@@ -148,7 +128,7 @@ function Contact() {
                 <h3 style={{ fontFamily: 'Fredoka', color: 'white', marginBottom: '0.5rem', fontSize: '1.2rem' }}>{c.paquisTitle}</h3>
                 <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: '0.25rem' }}>{c.paquisAddress}</p>
                 <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: '0.25rem' }}>📞 +41 79 565 41 42</p>
-                <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: 0 }}>✉️ booking@lavorama.ch</p>
+                <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.9rem', fontWeight: 400, marginBottom: 0 }}>✉️ info@lavorama.ch</p>
               </div>
               <div style={{ background: 'var(--secondary)', borderRadius: '16px', padding: '1.5rem', marginTop: '1rem', color: 'white' }}>
                 <h3 style={{ fontFamily: 'Fredoka', color: 'white', marginBottom: '0.5rem', fontSize: '1.2rem' }}>{c.plainpalaisTitle}</h3>
