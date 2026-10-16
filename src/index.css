@@ -605,6 +605,24 @@ footer { padding: 4rem 0 2rem; }
   transition: var(--transition);
 }
 .footer-links a:hover { color: var(--primary); }
+.footer-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  color: #94A3B8;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.footer-credit a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-credit a:hover { color: #fff; }
 
 /* ══════════════════════════════════════
    RESPONSIVE BREAKPOINTS

@@ -192,6 +192,13 @@ function PageFooter() {
             <a href="/privacy" style={{ color: '#64748B', fontSize: '0.875rem', textDecoration: 'none' }}>{f.privacy}</a>
           </div>
         </div>
+        <div className="footer-credit">
+          <span aria-hidden="true">🧺</span>
+          <span>{f.creditLead}</span>
+          <a href="https://avadhbajaj.com" target="_blank" rel="noopener noreferrer">
+            Avadh Bajaj <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </div>
     </footer>
     </>
